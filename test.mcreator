@@ -284,9 +284,9 @@
   },
   "workspaceSettings": {
     "modid": "test",
-    "modName": "Test",
+    "modName": "Ultimate Additions",
     "version": "1.0.0",
-    "author": "phibook, MCreator",
+    "author": "Jelzox, bretchou",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
