@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ultad:oak_alt_slab"
+    }
+  ],
+  "result": {
+    "item": "minecraft:oak_slab",
+    "count": 1
+  }
+}

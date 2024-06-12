@@ -231,17 +231,44 @@
       "path": "~/Test Zone"
     },
     {
-      "name": "OakSlabSelection",
-      "type": "procedure",
+      "name": "OakSlabGuiConversion",
+      "type": "recipe",
       "sortid": 34,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oak_slab_selection",
+      "registry_name": "oak_slab_gui_conversion",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ultad/procedures/OakSlabSelectionProcedure.java"
-        ],
-        "dependencies": []
+          "src/main/resources/data/ultad/recipes/oak_slab_gui_conversion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "OakSlabGuiFusion2",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_slab_gui_fusion_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ultad/recipes/oak_slab_gui_fusion_2.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "OakSlabGuiConversion2",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_slab_gui_conversion_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ultad/recipes/oak_slab_gui_conversion_2.json"
+        ]
       },
       "path": "~/Slabs Overhaul"
     }
