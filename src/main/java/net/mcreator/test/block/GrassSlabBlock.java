@@ -8,8 +8,8 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
-public class DirtSlabBlock extends SlabBlock {
-	public DirtSlabBlock() {
+public class GrassSlabBlock extends SlabBlock {
+	public GrassSlabBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).dynamicShape());
 	}
 

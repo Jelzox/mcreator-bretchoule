@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "test:block/dirt",
+    "top": "test:block/dirt",
+    "side": "test:block/grass_block_side"
+  },
+  "render_type": "solid"
+}
