@@ -716,6 +716,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
           }
         ]
       },
@@ -730,9 +734,9 @@
       "registry_name": "gui_test_gel",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/test/world/inventory/GuiTestGelMenu.java",
           "src/main/java/net/mcreator/test/network/GuiTestGelButtonMessage.java",
-          "src/main/java/net/mcreator/test/client/gui/GuiTestGelScreen.java",
-          "src/main/java/net/mcreator/test/world/inventory/GuiTestGelMenu.java"
+          "src/main/java/net/mcreator/test/client/gui/GuiTestGelScreen.java"
         ]
       },
       "path": "~/Test Zone"
@@ -800,6 +804,7 @@
       "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
+      "gui.test.gui_test_gel.Glacon2": "Glacon2",
       "block.test.dark_oak_spruce": "Dark Oak Wall",
       "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
@@ -818,7 +823,9 @@
       "block.test.warped_wall": "Acacia Wall",
       "advancements.secret_avancement.descr": "The player opened a secret door",
       "advancements.i_see_you.descr": "The player place a glass door",
+      "gui.test.gui_test_gel.Glacon": "Glacon",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
+      "gui.test.gui_test_gel.button_congeler": "Congeler",
       "block.test.oak_secret_trapdoor": "Secret Oak Trap",
       "block.test.grass_slab": "Grass Slab",
       "block.test.oak_wall": "Oak Wall",

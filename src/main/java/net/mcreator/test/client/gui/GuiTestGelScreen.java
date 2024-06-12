@@ -6,6 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
@@ -22,7 +23,9 @@ public class GuiTestGelScreen extends AbstractContainerScreen<GuiTestGelMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_convertir_en_glace;
+	Checkbox Glacon;
+	Checkbox Glacon2;
+	Button button_congeler;
 
 	public GuiTestGelScreen(GuiTestGelMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -74,13 +77,19 @@ public class GuiTestGelScreen extends AbstractContainerScreen<GuiTestGelMenu> {
 	@Override
 	public void init() {
 		super.init();
-		button_convertir_en_glace = Button.builder(Component.translatable("gui.test.gui_test_gel.button_convertir_en_glace"), e -> {
+		button_congeler = Button.builder(Component.translatable("gui.test.gui_test_gel.button_congeler"), e -> {
 			if (true) {
 				TestMod.PACKET_HANDLER.sendToServer(new GuiTestGelButtonMessage(0, x, y, z));
 				GuiTestGelButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 23, this.topPos + 48, 119, 20).build();
-		guistate.put("button:button_convertir_en_glace", button_convertir_en_glace);
-		this.addRenderableWidget(button_convertir_en_glace);
+		}).bounds(this.leftPos + 69, this.topPos + 26, 67, 20).build();
+		guistate.put("button:button_congeler", button_congeler);
+		this.addRenderableWidget(button_congeler);
+		Glacon = new Checkbox(this.leftPos + 40, this.topPos + 7, 20, 20, Component.translatable("gui.test.gui_test_gel.Glacon"), false);
+		guistate.put("checkbox:Glacon", Glacon);
+		this.addRenderableWidget(Glacon);
+		Glacon2 = new Checkbox(this.leftPos + 40, this.topPos + 47, 20, 20, Component.translatable("gui.test.gui_test_gel.Glacon2"), false);
+		guistate.put("checkbox:Glacon2", Glacon2);
+		this.addRenderableWidget(Glacon2);
 	}
 }

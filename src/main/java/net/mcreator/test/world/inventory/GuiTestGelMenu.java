@@ -7,8 +7,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -78,15 +78,15 @@ public class GuiTestGelMenu extends AbstractContainerMenu implements Supplier<Ma
 					});
 			}
 		}
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 11, 13) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 13, 30) {
 			private final int slot = 1;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Blocks.OAK_LOG.asItem() == stack.getItem();
+				return Items.WATER_BUCKET == stack.getItem();
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 139, 7) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 140, 8) {
 			private final int slot = 2;
 
 			@Override
@@ -94,7 +94,7 @@ public class GuiTestGelMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 139, 29) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 138, 52) {
 			private final int slot = 3;
 
 			@Override

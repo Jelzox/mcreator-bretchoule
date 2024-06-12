@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Blocks.LOG"
+            "value": "Items.WATER_BUCKET"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -24,8 +24,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 136,
-          "y": 49
+          "x": 138,
+          "y": 66
         }
       },
       {
@@ -36,23 +36,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 264,
-          "y": 43
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_convertir_en_glace",
-          "text": "Convertir en glace",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "ProcedurCommand"
-          },
-          "width": 119,
-          "height": 20,
-          "x": 149,
-          "y": 85
+          "x": 265,
+          "y": 44
         }
       },
       {
@@ -63,8 +48,41 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 264,
-          "y": 65
+          "x": 263,
+          "y": 88
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "Glacon",
+          "text": "Glacon",
+          "x": 166,
+          "y": 44
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "Glacon2",
+          "text": "Glacon2",
+          "x": 166,
+          "y": 84
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_congeler",
+          "text": "Congeler",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ProcedurCommand"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 195,
+          "y": 63
         }
       }
     ],
