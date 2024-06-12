@@ -7,8 +7,8 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -83,7 +83,7 @@ public class GuiTestGelMenu extends AbstractContainerMenu implements Supplier<Ma
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return Items.WATER_BUCKET == stack.getItem();
+				return Blocks.OAK_LOG.asItem() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 139, 7) {

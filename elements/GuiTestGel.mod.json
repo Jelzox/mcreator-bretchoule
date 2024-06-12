@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Items.WATER_BUCKET"
+            "value": "Blocks.LOG"
           },
           "disablePlacement": {
             "fixedValue": false
