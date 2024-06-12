@@ -1,6 +1,4 @@
 {
-  "item_group.test.secret_block": "Secret Block",
   "block.test.vertical_slab": "Vertical Slab",
-  "item_group.test.test": "VerticalSlabs",
-  "block.test.secret_oak_door": "Secret Oak Door"
+  "item_group.test.test": "VerticalSlabs"
 }
