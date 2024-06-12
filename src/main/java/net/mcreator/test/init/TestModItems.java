@@ -24,6 +24,13 @@ public class TestModItems {
 	public static final RegistryObject<Item> OAK_SECRET_TRAPDOOR = block(TestModBlocks.OAK_SECRET_TRAPDOOR);
 	public static final RegistryObject<Item> BIRCH_ALT_SLAB = block(TestModBlocks.BIRCH_ALT_SLAB);
 	public static final RegistryObject<Item> OAK_WALL = block(TestModBlocks.OAK_WALL);
+	public static final RegistryObject<Item> BIRCH_WALL = block(TestModBlocks.BIRCH_WALL);
+	public static final RegistryObject<Item> JUNGLE_WALL = block(TestModBlocks.JUNGLE_WALL);
+	public static final RegistryObject<Item> SPRUCE_WALL = block(TestModBlocks.SPRUCE_WALL);
+	public static final RegistryObject<Item> DARK_OAK_SPRUCE = block(TestModBlocks.DARK_OAK_SPRUCE);
+	public static final RegistryObject<Item> ACACIA_WALL = block(TestModBlocks.ACACIA_WALL);
+	public static final RegistryObject<Item> CRIMSON_WALL = block(TestModBlocks.CRIMSON_WALL);
+	public static final RegistryObject<Item> WARPED_WALL = block(TestModBlocks.WARPED_WALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items

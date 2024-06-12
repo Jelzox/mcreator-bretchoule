@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "test:block/dark_oak_planks",
+    "particle": "test:block/dark_oak_planks"
+  },
+  "render_type": "solid"
+}

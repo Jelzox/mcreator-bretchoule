@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "test:block/jungle_planks",
+    "particle": "test:block/jungle_planks"
+  },
+  "render_type": "solid"
+}

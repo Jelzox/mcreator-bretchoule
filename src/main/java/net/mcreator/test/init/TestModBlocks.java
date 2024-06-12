@@ -10,13 +10,20 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.test.block.WarpedWallBlock;
+import net.mcreator.test.block.SpruceWallBlock;
 import net.mcreator.test.block.OakWallBlock;
 import net.mcreator.test.block.OakSecretTrapdoorBlock;
 import net.mcreator.test.block.OakSecretDoorBlock;
 import net.mcreator.test.block.OakAltSlabBlock;
+import net.mcreator.test.block.JungleWallBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
 import net.mcreator.test.block.GlassDoorBlock;
+import net.mcreator.test.block.DarkOakSpruceBlock;
+import net.mcreator.test.block.CrimsonWallBlock;
+import net.mcreator.test.block.BirchWallBlock;
 import net.mcreator.test.block.BirchAltSlabBlock;
+import net.mcreator.test.block.AcaciaWallBlock;
 import net.mcreator.test.TestMod;
 
 public class TestModBlocks {
@@ -28,6 +35,13 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> OAK_SECRET_TRAPDOOR = REGISTRY.register("oak_secret_trapdoor", () -> new OakSecretTrapdoorBlock());
 	public static final RegistryObject<Block> BIRCH_ALT_SLAB = REGISTRY.register("birch_alt_slab", () -> new BirchAltSlabBlock());
 	public static final RegistryObject<Block> OAK_WALL = REGISTRY.register("oak_wall", () -> new OakWallBlock());
+	public static final RegistryObject<Block> BIRCH_WALL = REGISTRY.register("birch_wall", () -> new BirchWallBlock());
+	public static final RegistryObject<Block> JUNGLE_WALL = REGISTRY.register("jungle_wall", () -> new JungleWallBlock());
+	public static final RegistryObject<Block> SPRUCE_WALL = REGISTRY.register("spruce_wall", () -> new SpruceWallBlock());
+	public static final RegistryObject<Block> DARK_OAK_SPRUCE = REGISTRY.register("dark_oak_spruce", () -> new DarkOakSpruceBlock());
+	public static final RegistryObject<Block> ACACIA_WALL = REGISTRY.register("acacia_wall", () -> new AcaciaWallBlock());
+	public static final RegistryObject<Block> CRIMSON_WALL = REGISTRY.register("crimson_wall", () -> new CrimsonWallBlock());
+	public static final RegistryObject<Block> WARPED_WALL = REGISTRY.register("warped_wall", () -> new WarpedWallBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

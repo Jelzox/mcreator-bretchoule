@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "test:block/acacia_planks",
+    "particle": "test:block/acacia_planks"
+  },
+  "render_type": "solid"
+}

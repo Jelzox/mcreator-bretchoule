@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "test:block/warped_planks",
+    "particle": "test:block/warped_planks"
+  },
+  "render_type": "solid"
+}

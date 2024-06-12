@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "test:block/spruce_planks",
+    "particle": "test:block/spruce_planks"
+  },
+  "render_type": "solid"
+}
