@@ -25,38 +25,6 @@
       "path": "~/Secret Entrances"
     },
     {
-      "name": "OakSlabConversion",
-      "type": "procedure",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_slab_conversion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ultad/procedures/OakSlabConversionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Slabs Overhaul"
-    },
-    {
       "name": "OakSlabFusion",
       "type": "procedure",
       "sortid": 26,
