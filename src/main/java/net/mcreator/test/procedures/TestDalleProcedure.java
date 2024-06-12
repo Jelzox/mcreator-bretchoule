@@ -9,6 +9,8 @@ import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
@@ -34,7 +36,7 @@ public class TestDalleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.isShiftKeyDown()) {
+		if (entity.isShiftKeyDown() && !(entity instanceof LivingEntity _entMainHand1 && _entMainHand1.getMainArm() == HumanoidArm.RIGHT && entity instanceof LivingEntity _entMainHand2 && _entMainHand2.getMainArm() == HumanoidArm.LEFT)) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OAK_SLAB) {
 				{
 					BlockPos _bp = BlockPos.containing(x, y, z);
