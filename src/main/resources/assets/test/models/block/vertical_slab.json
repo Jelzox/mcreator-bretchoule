@@ -1,5 +1,5 @@
 {
-  "parent": "test:custom/oakslab",
+  "parent": "test:custom/vslab",
   "textures": {
     "all": "test:block/oak_planks",
     "particle": "test:block/oak_planks",
