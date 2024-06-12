@@ -9,7 +9,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "BUILDING",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
@@ -24,7 +24,7 @@
         "value": ""
       },
       {
-        "value": "Blocks.WOODEN_SLAB#0"
+        "value": "Blocks.WOODEN_SLAB#2"
       },
       {
         "value": ""
@@ -33,16 +33,16 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "Blocks.WOODEN_SLAB#2"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:OakAltSlab"
+      "value": "Blocks.PLANKS#2"
     },
-    "name": "oak_slab_gui_conversion",
+    "name": "birch_slab_gui_fusion",
     "namespace": "mod"
   }
 }

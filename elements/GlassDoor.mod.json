@@ -2,8 +2,8 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "glass",
-    "textureTop": "glass",
+    "texture": "downglassdoor",
+    "textureTop": "topoakdoorglass_-_copie",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "door",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",
@@ -34,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Test Glass Door",
+    "name": "Glass Door",
     "specialInformation": {
       "fixedValue": []
     },
@@ -66,7 +66,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "IRON",
     "creativePickItem": {
       "value": ""
     },

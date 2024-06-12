@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 6,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,7 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Blocks.PLANKS#0"
       },
       {
         "value": ""
@@ -21,16 +21,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:OakAltSlab"
-      },
-      {
-        "value": "CUSTOM:OakAltSlab"
+        "value": "Blocks.PLANKS#0"
       },
       {
         "value": ""
       },
       {
         "value": ""
+      },
+      {
+        "value": "Blocks.PLANKS#0"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.PLANKS#0"
+      "value": "CUSTOM:OakAltSlab"
     },
-    "name": "oak_slab_gui_fusion_2",
+    "name": "oak_vertical_slab_craft_2",
     "namespace": "mod"
   }
 }

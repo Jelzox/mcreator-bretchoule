@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "test:block/glass"
+    "layer0": "test:item/door"
   },
   "render_type": "translucent"
 }

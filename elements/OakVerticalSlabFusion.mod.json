@@ -9,7 +9,7 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "BUILDING",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
         "value": ""
@@ -21,7 +21,7 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:OakAltSlab"
       },
       {
         "value": "CUSTOM:OakAltSlab"
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.WOODEN_SLAB#0"
+      "value": "Blocks.PLANKS#0"
     },
-    "name": "oak_slab_gui_conversion_2",
+    "name": "oak_vertical_slab_fusion",
     "namespace": "mod"
   }
 }

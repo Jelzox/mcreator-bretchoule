@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "test:glass_door"
+    },
+    "title": {
+      "translate": "advancements.i_see_you.title"
+    },
+    "description": {
+      "translate": "advancements.i_see_you.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "i_see_you_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

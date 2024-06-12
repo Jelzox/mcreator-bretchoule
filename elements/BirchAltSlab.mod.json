@@ -2,14 +2,14 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "oak_planks",
+    "texture": "birch_planks",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "oakvslab:default",
+    "customModelName": "birchvslab:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Oak Vertical Slab",
+    "name": "Birch Vertical Slab",
     "specialInformation": {
       "fixedValue": []
     },
@@ -46,7 +46,7 @@
     },
     "destroyTool": "axe",
     "customDrop": {
-      "value": "Blocks.WOODEN_SLAB#0"
+      "value": "Blocks.WOODEN_SLAB#2"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

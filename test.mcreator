@@ -58,7 +58,7 @@
           }
         ]
       },
-      "path": "~/Slabs Overhaul"
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
     },
     {
       "name": "OakSlabGuiFusion",
@@ -72,7 +72,7 @@
           "src/main/resources/data/test/recipes/oak_slab_gui_fusion.json"
         ]
       },
-      "path": "~/Slabs Overhaul"
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
     },
     {
       "name": "OakAltSlab",
@@ -84,13 +84,13 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/test/models/item/oak_alt_slab.json",
-          "src/main/resources/assets/test/blockstates/oak_alt_slab.json",
-          "src/main/java/net/mcreator/test/block/OakAltSlabBlock.java",
           "src/main/resources/data/test/loot_tables/blocks/oak_alt_slab.json",
-          "src/main/resources/assets/test/models/block/oak_alt_slab.json"
+          "src/main/resources/assets/test/models/block/oak_alt_slab.json",
+          "src/main/resources/assets/test/blockstates/oak_alt_slab.json",
+          "src/main/java/net/mcreator/test/block/OakAltSlabBlock.java"
         ]
       },
-      "path": "~/Slabs Overhaul"
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
     },
     {
       "name": "GlassDoor",
@@ -101,17 +101,17 @@
       "registry_name": "glass_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/test/models/block/glass_door_top_left.json",
-          "src/main/resources/assets/test/models/block/glass_door_bottom_right.json",
-          "src/main/resources/assets/test/models/block/glass_door_bottom_right_open.json",
-          "src/main/resources/assets/test/models/block/glass_door_top_right.json",
-          "src/main/resources/assets/test/blockstates/glass_door.json",
-          "src/main/resources/assets/test/models/item/glass_door.json",
           "src/main/java/net/mcreator/test/block/GlassDoorBlock.java",
           "src/main/resources/assets/test/models/block/glass_door_top_left_open.json",
+          "src/main/resources/assets/test/models/block/glass_door_top_right.json",
           "src/main/resources/assets/test/models/block/glass_door_bottom_left.json",
+          "src/main/resources/assets/test/models/item/glass_door.json",
+          "src/main/resources/assets/test/blockstates/glass_door.json",
+          "src/main/resources/assets/test/models/block/glass_door_bottom_right.json",
           "src/main/resources/assets/test/models/block/glass_door_bottom_left_open.json",
+          "src/main/resources/assets/test/models/block/glass_door_bottom_right_open.json",
           "src/main/resources/data/test/loot_tables/blocks/glass_door.json",
+          "src/main/resources/assets/test/models/block/glass_door_top_left.json",
           "src/main/resources/assets/test/models/block/glass_door_top_right_open.json"
         ]
       },
@@ -148,48 +148,6 @@
         "files": []
       },
       "path": "~/Test Zone"
-    },
-    {
-      "name": "OakSlabGuiConversion",
-      "type": "recipe",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_slab_gui_conversion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/oak_slab_gui_conversion.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul"
-    },
-    {
-      "name": "OakSlabGuiFusion2",
-      "type": "recipe",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_slab_gui_fusion_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/oak_slab_gui_fusion_2.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul"
-    },
-    {
-      "name": "OakSlabGuiConversion2",
-      "type": "recipe",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_slab_gui_conversion_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/oak_slab_gui_conversion_2.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul"
     },
     {
       "name": "OakSecretDoor",
@@ -235,12 +193,252 @@
         ]
       },
       "path": "~/Secret Entrances"
+    },
+    {
+      "name": "SecretAvancement",
+      "type": "achievement",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secret_avancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/advancements/secret_avancement.json"
+        ]
+      },
+      "path": "~/Secret Entrances"
+    },
+    {
+      "name": "AvancementGlassDoor",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "avancement_glass_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/AvancementGlassDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Secret Entrances"
+    },
+    {
+      "name": "AvancementSecretOakDoor",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "avancement_secret_oak_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/AvancementSecretOakDoorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Secret Entrances"
+    },
+    {
+      "name": "ISeeYou",
+      "type": "achievement",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "i_see_you",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/advancements/i_see_you.json"
+        ]
+      },
+      "path": "~/Secret Entrances"
+    },
+    {
+      "name": "OakVerticalSlabFusion",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_vertical_slab_fusion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/oak_vertical_slab_fusion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
+    },
+    {
+      "name": "OakVerticalSlabCutter",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_vertical_slab_cutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/oak_vertical_slab_cutter.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
+    },
+    {
+      "name": "BirchAltSlab",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_alt_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/item/birch_alt_slab.json",
+          "src/main/java/net/mcreator/test/block/BirchAltSlabBlock.java",
+          "src/main/resources/assets/test/blockstates/birch_alt_slab.json",
+          "src/main/resources/data/test/loot_tables/blocks/birch_alt_slab.json",
+          "src/main/resources/assets/test/models/block/birch_alt_slab.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "BirchSlabFusion",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_slab_fusion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/BirchSlabFusionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "BirchSlabGuiFusion",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_slab_gui_fusion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/birch_slab_gui_fusion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "BirchVerticalSlabCutter",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_vertical_slab_cutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/birch_vertical_slab_cutter.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "OakVerticalSlabCraft2",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_vertical_slab_craft_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/oak_vertical_slab_craft_2.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
+    },
+    {
+      "name": "BirchVerticalSlabFusion",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_vertical_slab_fusion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/birch_vertical_slab_fusion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:BirchAltSlab",
+      "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
     ]
@@ -248,6 +446,7 @@
   "language_map": {
     "en_us": {
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
+      "block.test.birch_alt_slab": "Birch Vertical Slab",
       "block.test.glass_trapdoor": "Test Glass Door",
       "item_group.ultad.secret_entrances": "Secret Entrances",
       "item_group.test.vertical_slabs": "Vertical Slabs",
@@ -255,14 +454,18 @@
       "block.test.oak_alt_slab": "Oak Vertical Slab",
       "item_group.test.test": "VerticalSlabs",
       "block.test.oak_secret_door": "Secret Oak Door",
-      "block.test.glass_door": "Test Glass Door",
+      "advancements.i_see_you.title": "I Can See You",
+      "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.ultad.glass_trapdoor": "Test Glass Door",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",
+      "advancements.secret_avancement.descr": "The player opened a secret door",
+      "advancements.i_see_you.descr": "The player place a glass door",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
       "block.ultad.glass_door": "Test Glass Door",
-      "block.test.oak_secret_trapdoor": "Secret Oak Trap"
+      "block.test.oak_secret_trapdoor": "Secret Oak Trap",
+      "advancements.secret_avancement.title": "Secret Avancement"
     }
   },
   "foldersRoot": {
@@ -270,7 +473,12 @@
     "children": [
       {
         "name": "Slabs Overhaul",
-        "children": []
+        "children": [
+          {
+            "name": "OakVerticalSlab",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Secret Entrances",

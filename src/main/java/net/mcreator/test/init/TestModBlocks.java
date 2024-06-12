@@ -15,6 +15,7 @@ import net.mcreator.test.block.OakSecretDoorBlock;
 import net.mcreator.test.block.OakAltSlabBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
 import net.mcreator.test.block.GlassDoorBlock;
+import net.mcreator.test.block.BirchAltSlabBlock;
 import net.mcreator.test.TestMod;
 
 public class TestModBlocks {
@@ -24,6 +25,7 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> GLASS_TRAPDOOR = REGISTRY.register("glass_trapdoor", () -> new GlassTrapdoorBlock());
 	public static final RegistryObject<Block> OAK_SECRET_DOOR = REGISTRY.register("oak_secret_door", () -> new OakSecretDoorBlock());
 	public static final RegistryObject<Block> OAK_SECRET_TRAPDOOR = REGISTRY.register("oak_secret_trapdoor", () -> new OakSecretTrapdoorBlock());
+	public static final RegistryObject<Block> BIRCH_ALT_SLAB = REGISTRY.register("birch_alt_slab", () -> new BirchAltSlabBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
