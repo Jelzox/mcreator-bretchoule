@@ -64,7 +64,7 @@ public class GuiTestGelButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ProcedurCommandProcedure.execute(world, x, y, z);
+			ProcedurCommandProcedure.execute(entity);
 		}
 	}
 
