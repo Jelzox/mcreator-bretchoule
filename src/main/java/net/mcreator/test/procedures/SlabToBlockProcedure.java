@@ -64,6 +64,20 @@ public class SlabToBlockProcedure {
 		}.with(TestModBlocks.VERTICAL_SLAB.get().defaultBlockState(), Direction.NORTH)).getBlock()) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockState _bs = Blocks.OAK_PLANKS.defaultBlockState();
+				BlockState _bso = world.getBlockState(_bp);
+				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+					if (_property != null && _bs.getValue(_property) != null)
+						try {
+							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+						} catch (Exception e) {
+						}
+				}
+				world.setBlock(_bp, _bs, 3);
+			}
+			{
+				BlockPos _bp = BlockPos.containing(x, y, z + 1);
 				BlockState _bs = Blocks.AIR.defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
