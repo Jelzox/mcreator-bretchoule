@@ -665,6 +665,26 @@
         ]
       },
       "path": "~/Wall"
+    },
+    {
+      "name": "DirtSlab",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/loot_tables/blocks/dirt_slab.json",
+          "src/main/java/net/mcreator/test/block/DirtSlabBlock.java",
+          "src/main/resources/assets/test/models/block/dirt_slab_top.json",
+          "src/main/resources/assets/test/models/item/dirt_slab.json",
+          "src/main/resources/assets/test/models/block/dirt_slab.json",
+          "src/main/resources/assets/test/blockstates/dirt_slab.json",
+          "src/main/resources/assets/test/models/block/dirt_slab_full.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Dirt"
     }
   ],
   "variable_elements": [],
@@ -679,6 +699,9 @@
       "~CUSTOM:JungleWall",
       "~CUSTOM:BirchWall",
       "~CUSTOM:OakWall"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:DirtSlab"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:WarpedWall",
@@ -716,6 +739,7 @@
       "advancements.i_see_you.title": "I Can See You",
       "block.test.birch_wall": "Birch Wall",
       "block.test.crimson_wall": "Acacia Wall",
+      "block.test.dirt_slab": "Dirt Slab",
       "block.ultad.glass_trapdoor": "Test Glass Door",
       "block.test.warped_wall": "Acacia Wall",
       "advancements.secret_avancement.descr": "The player opened a secret door",
@@ -736,8 +760,16 @@
         "children": []
       },
       {
+        "name": "Wall",
+        "children": []
+      },
+      {
         "name": "Slabs Overhaul",
         "children": [
+          {
+            "name": "Dirt",
+            "children": []
+          },
           {
             "name": "OakVerticalSlab",
             "children": []
@@ -746,10 +778,6 @@
       },
       {
         "name": "Secret Entrances",
-        "children": []
-      },
-      {
-        "name": "Wall",
         "children": []
       }
     ]

@@ -35,6 +35,7 @@ public class TestModTabs {
 				tabData.accept(TestModBlocks.ACACIA_WALL.get().asItem());
 				tabData.accept(TestModBlocks.CRIMSON_WALL.get().asItem());
 				tabData.accept(TestModBlocks.WARPED_WALL.get().asItem());
+				tabData.accept(TestModBlocks.DIRT_SLAB.get().asItem());
 			})
 
 					.build());
