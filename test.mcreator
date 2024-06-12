@@ -764,6 +764,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/test/world/inventory/GuiTestGelMenu.java",
+          "src/main/java/net/mcreator/test/network/GuiTestGelButtonMessage.java",
           "src/main/java/net/mcreator/test/client/gui/GuiTestGelScreen.java"
         ]
       },
