@@ -53,6 +53,20 @@
           "src/main/resources/data/test/recipes/stone_cutter.json"
         ]
       }
+    },
+    {
+      "name": "SlabToBlock",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slab_to_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/SlabToBlockProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
