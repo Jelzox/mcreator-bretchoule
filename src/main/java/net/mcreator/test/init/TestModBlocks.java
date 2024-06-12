@@ -26,7 +26,7 @@ import net.mcreator.test.block.GlassTrapdoorBlock;
 import net.mcreator.test.block.GlassDoorBlock;
 import net.mcreator.test.block.ExpeditionBlockBlock;
 import net.mcreator.test.block.DirtSlabBlock;
-import net.mcreator.test.block.DarkOakSpruceBlock;
+import net.mcreator.test.block.DarkOakWallBlock;
 import net.mcreator.test.block.CrimsonWallBlock;
 import net.mcreator.test.block.BirchWallBlock;
 import net.mcreator.test.block.BirchAltSlabBlock;
@@ -42,16 +42,16 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> OAK_SECRET_TRAPDOOR = REGISTRY.register("oak_secret_trapdoor", () -> new OakSecretTrapdoorBlock());
 	public static final RegistryObject<Block> BIRCH_ALT_SLAB = REGISTRY.register("birch_alt_slab", () -> new BirchAltSlabBlock());
 	public static final RegistryObject<Block> OAK_WALL = REGISTRY.register("oak_wall", () -> new OakWallBlock());
-	public static final RegistryObject<Block> BIRCH_WALL = REGISTRY.register("birch_wall", () -> new BirchWallBlock());
-	public static final RegistryObject<Block> JUNGLE_WALL = REGISTRY.register("jungle_wall", () -> new JungleWallBlock());
-	public static final RegistryObject<Block> SPRUCE_WALL = REGISTRY.register("spruce_wall", () -> new SpruceWallBlock());
-	public static final RegistryObject<Block> DARK_OAK_SPRUCE = REGISTRY.register("dark_oak_spruce", () -> new DarkOakSpruceBlock());
-	public static final RegistryObject<Block> ACACIA_WALL = REGISTRY.register("acacia_wall", () -> new AcaciaWallBlock());
-	public static final RegistryObject<Block> CRIMSON_WALL = REGISTRY.register("crimson_wall", () -> new CrimsonWallBlock());
-	public static final RegistryObject<Block> WARPED_WALL = REGISTRY.register("warped_wall", () -> new WarpedWallBlock());
 	public static final RegistryObject<Block> DIRT_SLAB = REGISTRY.register("dirt_slab", () -> new DirtSlabBlock());
 	public static final RegistryObject<Block> EXPEDITION_BLOCK = REGISTRY.register("expedition_block", () -> new ExpeditionBlockBlock());
 	public static final RegistryObject<Block> GRASS_SLAB = REGISTRY.register("grass_slab", () -> new GrassSlabBlock());
+	public static final RegistryObject<Block> BIRCH_WALL = REGISTRY.register("birch_wall", () -> new BirchWallBlock());
+	public static final RegistryObject<Block> JUNGLE_WALL = REGISTRY.register("jungle_wall", () -> new JungleWallBlock());
+	public static final RegistryObject<Block> DARK_OAK_WALL = REGISTRY.register("dark_oak_wall", () -> new DarkOakWallBlock());
+	public static final RegistryObject<Block> SPRUCE_WALL = REGISTRY.register("spruce_wall", () -> new SpruceWallBlock());
+	public static final RegistryObject<Block> WARPED_WALL = REGISTRY.register("warped_wall", () -> new WarpedWallBlock());
+	public static final RegistryObject<Block> CRIMSON_WALL = REGISTRY.register("crimson_wall", () -> new CrimsonWallBlock());
+	public static final RegistryObject<Block> ACACIA_WALL = REGISTRY.register("acacia_wall", () -> new AcaciaWallBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

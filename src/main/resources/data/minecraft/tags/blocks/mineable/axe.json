@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "test:warped_wall",
-    "test:crimson_wall",
     "test:acacia_wall",
-    "test:dark_oak_spruce",
+    "test:crimson_wall",
+    "test:warped_wall",
     "test:spruce_wall",
+    "test:dark_oak_wall",
     "test:jungle_wall",
     "test:birch_wall",
     "test:oak_wall",

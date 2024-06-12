@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
-  "features": "test:dark_oak_spruce",
-  "step": "underground_ores"
-}

@@ -12,8 +12,8 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class DarkOakSpruceBlock extends WallBlock {
-	public DarkOakSpruceBlock() {
+public class DarkOakWallBlock extends WallBlock {
+	public DarkOakWallBlock() {
 		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().forceSolidOn());
 	}
 

@@ -28,16 +28,16 @@ public class TestModTabs {
 				tabData.accept(TestModBlocks.OAK_ALT_SLAB.get().asItem());
 				tabData.accept(TestModBlocks.BIRCH_ALT_SLAB.get().asItem());
 				tabData.accept(TestModBlocks.OAK_WALL.get().asItem());
-				tabData.accept(TestModBlocks.BIRCH_WALL.get().asItem());
-				tabData.accept(TestModBlocks.JUNGLE_WALL.get().asItem());
-				tabData.accept(TestModBlocks.SPRUCE_WALL.get().asItem());
-				tabData.accept(TestModBlocks.DARK_OAK_SPRUCE.get().asItem());
-				tabData.accept(TestModBlocks.ACACIA_WALL.get().asItem());
-				tabData.accept(TestModBlocks.CRIMSON_WALL.get().asItem());
-				tabData.accept(TestModBlocks.WARPED_WALL.get().asItem());
 				tabData.accept(TestModBlocks.DIRT_SLAB.get().asItem());
 				tabData.accept(TestModBlocks.GRASS_SLAB.get().asItem());
 				tabData.accept(TestModBlocks.EXPEDITION_BLOCK.get().asItem());
+				tabData.accept(TestModBlocks.BIRCH_WALL.get().asItem());
+				tabData.accept(TestModBlocks.JUNGLE_WALL.get().asItem());
+				tabData.accept(TestModBlocks.DARK_OAK_WALL.get().asItem());
+				tabData.accept(TestModBlocks.SPRUCE_WALL.get().asItem());
+				tabData.accept(TestModBlocks.WARPED_WALL.get().asItem());
+				tabData.accept(TestModBlocks.CRIMSON_WALL.get().asItem());
+				tabData.accept(TestModBlocks.ACACIA_WALL.get().asItem());
 			})
 
 					.build());

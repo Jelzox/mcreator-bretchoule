@@ -482,174 +482,6 @@
       "path": "~/Wall"
     },
     {
-      "name": "BirchWall",
-      "type": "block",
-      "sortid": 58,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "birch_wall",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/worldgen/placed_feature/birch_wall.json",
-          "src/main/resources/assets/test/models/block/birch_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/birch_wall.json",
-          "src/main/resources/data/test/forge/biome_modifier/birch_wall_biome_modifier.json",
-          "src/main/resources/assets/test/models/block/birch_wall_side_tall.json",
-          "src/main/resources/assets/test/blockstates/birch_wall.json",
-          "src/main/resources/assets/test/models/block/birch_wall_inventory.json",
-          "src/main/java/net/mcreator/test/block/BirchWallBlock.java",
-          "src/main/resources/data/test/loot_tables/blocks/birch_wall.json",
-          "src/main/resources/assets/test/models/block/birch_wall_post.json",
-          "src/main/resources/assets/test/models/item/birch_wall.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
-      "name": "JungleWall",
-      "type": "block",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jungle_wall",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/test/models/block/jungle_wall_inventory.json",
-          "src/main/resources/data/test/loot_tables/blocks/jungle_wall.json",
-          "src/main/resources/assets/test/blockstates/jungle_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/jungle_wall.json",
-          "src/main/java/net/mcreator/test/block/JungleWallBlock.java",
-          "src/main/resources/assets/test/models/block/jungle_wall_side_tall.json",
-          "src/main/resources/assets/test/models/block/jungle_wall_post.json",
-          "src/main/resources/data/test/forge/biome_modifier/jungle_wall_biome_modifier.json",
-          "src/main/resources/assets/test/models/item/jungle_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/jungle_wall.json",
-          "src/main/resources/assets/test/models/block/jungle_wall.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
-      "name": "SpruceWall",
-      "type": "block",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spruce_wall",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/forge/biome_modifier/spruce_wall_biome_modifier.json",
-          "src/main/resources/data/test/worldgen/configured_feature/spruce_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/spruce_wall.json",
-          "src/main/resources/assets/test/blockstates/spruce_wall.json",
-          "src/main/resources/assets/test/models/item/spruce_wall.json",
-          "src/main/resources/assets/test/models/block/spruce_wall_side_tall.json",
-          "src/main/resources/assets/test/models/block/spruce_wall_inventory.json",
-          "src/main/resources/assets/test/models/block/spruce_wall.json",
-          "src/main/resources/assets/test/models/block/spruce_wall_post.json",
-          "src/main/java/net/mcreator/test/block/SpruceWallBlock.java",
-          "src/main/resources/data/test/loot_tables/blocks/spruce_wall.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
-      "name": "DarkOakSpruce",
-      "type": "block",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_oak_spruce",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/test/models/block/dark_oak_spruce_inventory.json",
-          "src/main/resources/assets/test/models/item/dark_oak_spruce.json",
-          "src/main/resources/assets/test/models/block/dark_oak_spruce.json",
-          "src/main/resources/assets/test/models/block/dark_oak_spruce_side_tall.json",
-          "src/main/resources/assets/test/blockstates/dark_oak_spruce.json",
-          "src/main/java/net/mcreator/test/block/DarkOakSpruceBlock.java",
-          "src/main/resources/data/test/forge/biome_modifier/dark_oak_spruce_biome_modifier.json",
-          "src/main/resources/data/test/loot_tables/blocks/dark_oak_spruce.json",
-          "src/main/resources/data/test/worldgen/placed_feature/dark_oak_spruce.json",
-          "src/main/resources/assets/test/models/block/dark_oak_spruce_post.json",
-          "src/main/resources/data/test/worldgen/configured_feature/dark_oak_spruce.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
-      "name": "AcaciaWall",
-      "type": "block",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "acacia_wall",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/test/models/item/acacia_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/acacia_wall.json",
-          "src/main/resources/assets/test/blockstates/acacia_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/acacia_wall.json",
-          "src/main/java/net/mcreator/test/block/AcaciaWallBlock.java",
-          "src/main/resources/data/test/loot_tables/blocks/acacia_wall.json",
-          "src/main/resources/assets/test/models/block/acacia_wall.json",
-          "src/main/resources/assets/test/models/block/acacia_wall_post.json",
-          "src/main/resources/assets/test/models/block/acacia_wall_inventory.json",
-          "src/main/resources/data/test/forge/biome_modifier/acacia_wall_biome_modifier.json",
-          "src/main/resources/assets/test/models/block/acacia_wall_side_tall.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
-      "name": "CrimsonWall",
-      "type": "block",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crimson_wall",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/forge/biome_modifier/crimson_wall_biome_modifier.json",
-          "src/main/resources/assets/test/models/block/crimson_wall_inventory.json",
-          "src/main/resources/assets/test/models/block/crimson_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/crimson_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/crimson_wall.json",
-          "src/main/resources/data/test/loot_tables/blocks/crimson_wall.json",
-          "src/main/resources/assets/test/models/item/crimson_wall.json",
-          "src/main/resources/assets/test/models/block/crimson_wall_side_tall.json",
-          "src/main/resources/assets/test/blockstates/crimson_wall.json",
-          "src/main/java/net/mcreator/test/block/CrimsonWallBlock.java",
-          "src/main/resources/assets/test/models/block/crimson_wall_post.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
-      "name": "WarpedWall",
-      "type": "block",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "warped_wall",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/test/models/block/warped_wall_side_tall.json",
-          "src/main/resources/assets/test/models/block/warped_wall_inventory.json",
-          "src/main/resources/assets/test/blockstates/warped_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/warped_wall.json",
-          "src/main/java/net/mcreator/test/block/WarpedWallBlock.java",
-          "src/main/resources/assets/test/models/item/warped_wall.json",
-          "src/main/resources/assets/test/models/block/warped_wall_post.json",
-          "src/main/resources/data/test/worldgen/configured_feature/warped_wall.json",
-          "src/main/resources/assets/test/models/block/warped_wall.json",
-          "src/main/resources/data/test/forge/biome_modifier/warped_wall_biome_modifier.json",
-          "src/main/resources/data/test/loot_tables/blocks/warped_wall.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
       "name": "OakWallC",
       "type": "recipe",
       "sortid": 65,
@@ -754,33 +586,167 @@
         ]
       },
       "path": "~/Slabs Overhaul/Grass"
+    },
+    {
+      "name": "BirchWall",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/block/birch_wall.json",
+          "src/main/resources/assets/test/models/block/birch_wall_side_tall.json",
+          "src/main/resources/assets/test/blockstates/birch_wall.json",
+          "src/main/resources/assets/test/models/block/birch_wall_inventory.json",
+          "src/main/java/net/mcreator/test/block/BirchWallBlock.java",
+          "src/main/resources/data/test/loot_tables/blocks/birch_wall.json",
+          "src/main/resources/assets/test/models/block/birch_wall_post.json",
+          "src/main/resources/assets/test/models/item/birch_wall.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "JungleWall",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/block/jungle_wall_inventory.json",
+          "src/main/resources/data/test/loot_tables/blocks/jungle_wall.json",
+          "src/main/resources/assets/test/blockstates/jungle_wall.json",
+          "src/main/java/net/mcreator/test/block/JungleWallBlock.java",
+          "src/main/resources/assets/test/models/block/jungle_wall_side_tall.json",
+          "src/main/resources/assets/test/models/block/jungle_wall_post.json",
+          "src/main/resources/assets/test/models/item/jungle_wall.json",
+          "src/main/resources/assets/test/models/block/jungle_wall.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "DarkOakWall",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/loot_tables/blocks/dark_oak_wall.json",
+          "src/main/java/net/mcreator/test/block/DarkOakWallBlock.java",
+          "src/main/resources/assets/test/blockstates/dark_oak_wall.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_post.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_inventory.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_side_tall.json",
+          "src/main/resources/assets/test/models/item/dark_oak_wall.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "SpruceWall",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/blockstates/spruce_wall.json",
+          "src/main/resources/assets/test/models/item/spruce_wall.json",
+          "src/main/resources/assets/test/models/block/spruce_wall_side_tall.json",
+          "src/main/resources/assets/test/models/block/spruce_wall_inventory.json",
+          "src/main/resources/assets/test/models/block/spruce_wall.json",
+          "src/main/resources/assets/test/models/block/spruce_wall_post.json",
+          "src/main/java/net/mcreator/test/block/SpruceWallBlock.java",
+          "src/main/resources/data/test/loot_tables/blocks/spruce_wall.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "WarpedWall",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/block/warped_wall_side_tall.json",
+          "src/main/resources/assets/test/models/block/warped_wall_inventory.json",
+          "src/main/resources/assets/test/blockstates/warped_wall.json",
+          "src/main/java/net/mcreator/test/block/WarpedWallBlock.java",
+          "src/main/resources/assets/test/models/item/warped_wall.json",
+          "src/main/resources/assets/test/models/block/warped_wall_post.json",
+          "src/main/resources/assets/test/models/block/warped_wall.json",
+          "src/main/resources/data/test/loot_tables/blocks/warped_wall.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "CrimsonWall",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/block/crimson_wall_inventory.json",
+          "src/main/resources/assets/test/models/block/crimson_wall.json",
+          "src/main/resources/data/test/loot_tables/blocks/crimson_wall.json",
+          "src/main/resources/assets/test/models/item/crimson_wall.json",
+          "src/main/resources/assets/test/models/block/crimson_wall_side_tall.json",
+          "src/main/resources/assets/test/blockstates/crimson_wall.json",
+          "src/main/java/net/mcreator/test/block/CrimsonWallBlock.java",
+          "src/main/resources/assets/test/models/block/crimson_wall_post.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "AcaciaWall",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/item/acacia_wall.json",
+          "src/main/resources/assets/test/blockstates/acacia_wall.json",
+          "src/main/java/net/mcreator/test/block/AcaciaWallBlock.java",
+          "src/main/resources/data/test/loot_tables/blocks/acacia_wall.json",
+          "src/main/resources/assets/test/models/block/acacia_wall.json",
+          "src/main/resources/assets/test/models/block/acacia_wall_post.json",
+          "src/main/resources/assets/test/models/block/acacia_wall_inventory.json",
+          "src/main/resources/assets/test/models/block/acacia_wall_side_tall.json"
+        ]
+      },
+      "path": "~/Wall"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
-    ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
-      "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
-      "~CUSTOM:SpruceWall",
-      "~CUSTOM:JungleWall",
-      "~CUSTOM:BirchWall",
-      "~CUSTOM:OakWall"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:DirtSlab"
     ],
     "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
       "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:WarpedWall",
       "~CUSTOM:SpruceWall",
+      "~CUSTOM:DarkOakWall",
       "~CUSTOM:JungleWall",
       "~CUSTOM:BirchWall",
       "~CUSTOM:OakWall",
@@ -788,6 +754,19 @@
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor",
       "~CUSTOM:OakAltSlab"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:AcaciaWall",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:WarpedWall",
+      "~CUSTOM:SpruceWall",
+      "~CUSTOM:DarkOakWall",
+      "~CUSTOM:JungleWall",
+      "~CUSTOM:BirchWall",
+      "~CUSTOM:OakWall"
     ]
   },
   "language_map": {
@@ -800,10 +779,10 @@
       "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
-      "block.test.dark_oak_spruce": "Dark Oak Wall",
       "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",
+      "block.test.dark_oak_wall": "Dark Oak Wall",
       "block.ultad.glass_door": "Test Glass Door",
       "block.test.glass_trapdoor": "Test Glass Door",
       "item_group.ultad.secret_entrances": "Secret Entrances",
@@ -812,10 +791,10 @@
       "block.test.acacia_wall": "Acacia Wall",
       "advancements.i_see_you.title": "I Can See You",
       "block.test.birch_wall": "Birch Wall",
-      "block.test.crimson_wall": "Acacia Wall",
+      "block.test.crimson_wall": "Crimson Wall",
       "block.test.dirt_slab": "Dirt Slab",
       "block.ultad.glass_trapdoor": "Test Glass Door",
-      "block.test.warped_wall": "Acacia Wall",
+      "block.test.warped_wall": "Warped Wall",
       "advancements.secret_avancement.descr": "The player opened a secret door",
       "advancements.i_see_you.descr": "The player place a glass door",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
