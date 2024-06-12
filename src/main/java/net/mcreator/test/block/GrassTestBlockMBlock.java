@@ -1,21 +1,7 @@
 
 package net.mcreator.test.block;
 
-import net.minecraftforge.client.event.RegisterColorHandlersEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.GrassColor;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.BiomeColors;
-
-import net.mcreator.test.init.TestModBlocks;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class GrassTestBlockMBlock extends Block {
 	public GrassTestBlockMBlock() {

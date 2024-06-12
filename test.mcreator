@@ -769,11 +769,32 @@
         ]
       },
       "path": "~/Test Zone"
+    },
+    {
+      "name": "GrassSlab",
+      "type": "block",
+      "sortid": 67,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "grass_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/item/grass_slab.json",
+          "src/main/resources/assets/test/models/block/grass_slab.json",
+          "src/main/resources/assets/test/blockstates/grass_slab.json",
+          "src/main/java/net/mcreator/test/block/GrassSlabBlock.java",
+          "src/main/resources/data/test/loot_tables/blocks/grass_slab.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Grass"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab"
+    ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
@@ -807,13 +828,12 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_secret_door": "Secret Oak Door",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_alt_slab": "Oak Vertical Slab",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_secret_door": "Secret Oak Door",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.dark_oak_spruce": "Dark Oak Wall",
-      "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",
       "block.ultad.glass_door": "Test Glass Door",
@@ -828,7 +848,6 @@
       "block.test.dirt_slab": "Dirt Slab",
       "block.ultad.glass_trapdoor": "Test Glass Door",
       "block.test.warped_wall": "Acacia Wall",
-      "block.test.grass_test_block_m": "Grass Test Block M",
       "advancements.secret_avancement.descr": "The player opened a secret door",
       "advancements.i_see_you.descr": "The player place a glass door",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",

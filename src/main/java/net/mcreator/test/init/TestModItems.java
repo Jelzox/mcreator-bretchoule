@@ -34,6 +34,7 @@ public class TestModItems {
 	public static final RegistryObject<Item> DIRT_SLAB = block(TestModBlocks.DIRT_SLAB);
 	public static final RegistryObject<Item> GRASS_TEST_BLOCK_M = block(TestModBlocks.GRASS_TEST_BLOCK_M);
 	public static final RegistryObject<Item> EXPEDITION_BLOCK = block(TestModBlocks.EXPEDITION_BLOCK);
+	public static final RegistryObject<Item> GRASS_SLAB = block(TestModBlocks.GRASS_SLAB);
 
 	// Start of user code block custom items
 	// End of user code block custom items
