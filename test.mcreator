@@ -751,11 +751,81 @@
         ]
       },
       "path": "~/Wall"
+    },
+    {
+      "name": "BirchWallC",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_wall_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/birch_wall_c.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "JungleWallC",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_wall_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/jungle_wall_c.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "SpruceWallC",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_wall_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/spruce_wall_c.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "AcaciaWallC",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_wall_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/acacia_wall_c.json"
+        ]
+      },
+      "path": "~/Wall"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:DarkOakWall",
+      "~CUSTOM:WarpedWall",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:AcaciaWall",
+      "~CUSTOM:DarkOakSpruce",
+      "~CUSTOM:SpruceWall",
+      "~CUSTOM:JungleWall",
+      "~CUSTOM:BirchWall",
+      "~CUSTOM:OakWall"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:DirtSlab"
     ],
@@ -773,20 +843,6 @@
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor",
       "~CUSTOM:OakAltSlab"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
-    ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:DarkOakWall",
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
-      "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
-      "~CUSTOM:SpruceWall",
-      "~CUSTOM:JungleWall",
-      "~CUSTOM:BirchWall",
-      "~CUSTOM:OakWall"
     ]
   },
   "language_map": {
@@ -794,12 +850,12 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_alt_slab": "Oak Vertical Slab",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_secret_door": "Secret Oak Door",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
-      "block.ultad.secret_oak_door": "Secret Oak Door",
       "gui.test.gui_test_gel.Glacon2": "Glacon2",
+      "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",
