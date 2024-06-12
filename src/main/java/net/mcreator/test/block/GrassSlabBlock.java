@@ -32,4 +32,11 @@ public class GrassSlabBlock extends SlabBlock {
 			return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : GrassColor.get(0.5D, 1.0D);
 		}, TestModBlocks.GRASS_SLAB.get());
 	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+		event.getItemColors().register((stack, index) -> {
+			return GrassColor.get(0.5D, 1.0D);
+		}, TestModBlocks.GRASS_SLAB.get());
+	}
 }

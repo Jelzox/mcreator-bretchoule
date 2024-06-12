@@ -742,19 +742,6 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
-    ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
-      "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
-      "~CUSTOM:SpruceWall",
-      "~CUSTOM:JungleWall",
-      "~CUSTOM:BirchWall",
-      "~CUSTOM:OakWall"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:GrassSlab",
       "~CUSTOM:DirtSlab"
@@ -772,6 +759,19 @@
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:WarpedWall",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:AcaciaWall",
+      "~CUSTOM:DarkOakSpruce",
+      "~CUSTOM:SpruceWall",
+      "~CUSTOM:JungleWall",
+      "~CUSTOM:BirchWall",
+      "~CUSTOM:OakWall"
     ]
   },
   "language_map": {
