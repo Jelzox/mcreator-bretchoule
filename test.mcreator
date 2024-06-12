@@ -40,6 +40,19 @@
           "src/main/resources/data/test/recipes/oak_vertical_slab.json"
         ]
       }
+    },
+    {
+      "name": "StoneCutter",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_cutter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/stone_cutter.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
