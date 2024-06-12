@@ -740,14 +740,14 @@
       "registry_name": "dark_oak_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/test/models/block/dark_oak_wall.json",
-          "src/main/resources/assets/test/models/item/dark_oak_wall.json",
-          "src/main/resources/assets/test/models/block/dark_oak_wall_side_tall.json",
-          "src/main/resources/assets/test/models/block/dark_oak_wall_inventory.json",
           "src/main/resources/data/test/loot_tables/blocks/dark_oak_wall.json",
           "src/main/java/net/mcreator/test/block/DarkOakWallBlock.java",
           "src/main/resources/assets/test/blockstates/dark_oak_wall.json",
-          "src/main/resources/assets/test/models/block/dark_oak_wall_post.json"
+          "src/main/resources/assets/test/models/block/dark_oak_wall_post.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_inventory.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_side_tall.json",
+          "src/main/resources/assets/test/models/item/dark_oak_wall.json"
         ]
       },
       "path": "~/Wall"
@@ -756,20 +756,6 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
-    ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:DarkOakWall",
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
-      "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
-      "~CUSTOM:SpruceWall",
-      "~CUSTOM:JungleWall",
-      "~CUSTOM:BirchWall",
-      "~CUSTOM:OakWall"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:DirtSlab"
     ],
@@ -787,6 +773,20 @@
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor",
       "~CUSTOM:OakAltSlab"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:DarkOakWall",
+      "~CUSTOM:WarpedWall",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:AcaciaWall",
+      "~CUSTOM:DarkOakSpruce",
+      "~CUSTOM:SpruceWall",
+      "~CUSTOM:JungleWall",
+      "~CUSTOM:BirchWall",
+      "~CUSTOM:OakWall"
     ]
   },
   "language_map": {
@@ -794,15 +794,16 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_alt_slab": "Oak Vertical Slab",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_secret_door": "Secret Oak Door",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
-      "block.ultad.secret_oak_door": "Secret Oak Door",
       "gui.test.gui_test_gel.Glacon2": "Glacon2",
+      "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",
+      "block.test.dark_oak_wall": "Dark Oak Wall",
       "block.ultad.glass_door": "Test Glass Door",
       "block.test.glass_trapdoor": "Test Glass Door",
       "item_group.ultad.secret_entrances": "Secret Entrances",
