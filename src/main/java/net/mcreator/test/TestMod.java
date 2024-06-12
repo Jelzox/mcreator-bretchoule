@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.test.init.TestModTabs;
+import net.mcreator.test.init.TestModMenus;
 import net.mcreator.test.init.TestModItems;
 import net.mcreator.test.init.TestModBlocks;
 
@@ -47,6 +48,7 @@ public class TestMod {
 
 		TestModTabs.REGISTRY.register(bus);
 
+		TestModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

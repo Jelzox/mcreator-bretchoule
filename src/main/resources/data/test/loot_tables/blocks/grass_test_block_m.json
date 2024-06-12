@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "test:blocks/grass_test_block_m",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "test:grass_test_block_m"
+        }
+      ]
+    }
+  ]
+}

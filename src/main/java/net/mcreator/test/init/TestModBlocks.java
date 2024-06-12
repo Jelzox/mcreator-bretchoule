@@ -21,9 +21,11 @@ import net.mcreator.test.block.OakSecretTrapdoorBlock;
 import net.mcreator.test.block.OakSecretDoorBlock;
 import net.mcreator.test.block.OakAltSlabBlock;
 import net.mcreator.test.block.JungleWallBlock;
+import net.mcreator.test.block.GrassTestBlockMBlock;
 import net.mcreator.test.block.GrassSlabBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
 import net.mcreator.test.block.GlassDoorBlock;
+import net.mcreator.test.block.ExpeditionBlockBlock;
 import net.mcreator.test.block.DirtSlabBlock;
 import net.mcreator.test.block.DarkOakSpruceBlock;
 import net.mcreator.test.block.CrimsonWallBlock;
@@ -50,6 +52,8 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> WARPED_WALL = REGISTRY.register("warped_wall", () -> new WarpedWallBlock());
 	public static final RegistryObject<Block> DIRT_SLAB = REGISTRY.register("dirt_slab", () -> new DirtSlabBlock());
 	public static final RegistryObject<Block> GRASS_SLAB = REGISTRY.register("grass_slab", () -> new GrassSlabBlock());
+	public static final RegistryObject<Block> GRASS_TEST_BLOCK_M = REGISTRY.register("grass_test_block_m", () -> new GrassTestBlockMBlock());
+	public static final RegistryObject<Block> EXPEDITION_BLOCK = REGISTRY.register("expedition_block", () -> new ExpeditionBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
@@ -58,6 +62,7 @@ public class TestModBlocks {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 			GrassSlabBlock.blockColorLoad(event);
+			GrassTestBlockMBlock.blockColorLoad(event);
 		}
 
 		@SubscribeEvent

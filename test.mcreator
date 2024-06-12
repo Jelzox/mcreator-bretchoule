@@ -703,12 +703,94 @@
         ]
       },
       "path": "~/Slabs Overhaul/Grass"
+    },
+    {
+      "name": "ProcedurCommand",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "procedur_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/ProcedurCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Test Zone"
+    },
+    {
+      "name": "GrassTestBlockM",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_test_block_m",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/blockstates/grass_test_block_m.json",
+          "src/main/resources/data/test/loot_tables/blocks/grass_test_block_m.json",
+          "src/main/resources/assets/test/models/block/grass_test_block_m.json",
+          "src/main/java/net/mcreator/test/block/GrassTestBlockMBlock.java",
+          "src/main/resources/assets/test/models/item/grass_test_block_m.json"
+        ]
+      },
+      "path": "~/Test Zone"
+    },
+    {
+      "name": "GuiTestGel",
+      "type": "gui",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_test_gel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/client/gui/GuiTestGelScreen.java",
+          "src/main/java/net/mcreator/test/world/inventory/GuiTestGelMenu.java"
+        ]
+      },
+      "path": "~/Test Zone"
+    },
+    {
+      "name": "ExpeditionBlock",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expedition_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/blockstates/expedition_block.json",
+          "src/main/resources/assets/test/models/block/expedition_block.json",
+          "src/main/resources/data/test/loot_tables/blocks/expedition_block.json",
+          "src/main/resources/assets/test/models/item/expedition_block.json",
+          "src/main/java/net/mcreator/test/block/ExpeditionBlockBlock.java"
+        ]
+      },
+      "path": "~/Test Zone"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:dirt": [],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:DirtSlab"
     ],
@@ -726,7 +808,6 @@
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
     ],
-    "BLOCKS:minecraft:fences": [],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
@@ -739,9 +820,7 @@
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:GrassSlab"
-    ],
-    "BIOMES:minecraft:is_overworld": [],
-    "BLOCKS:minecraft:logs": []
+    ]
   },
   "language_map": {
     "en_us": {
@@ -771,7 +850,6 @@
       "advancements.i_see_you.descr": "The player place a glass door",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
       "block.test.oak_secret_trapdoor": "Secret Oak Trap",
-      "block.test.grass_slab": "Grass Slab",
       "block.test.oak_wall": "Oak Wall",
       "advancements.secret_avancement.title": "Secret Avancement",
       "block.test.jungle_wall": "Jungle Wall",
