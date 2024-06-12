@@ -7,10 +7,6 @@ package net.mcreator.test.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.RegisterColorHandlersEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -50,14 +46,6 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> WARPED_WALL = REGISTRY.register("warped_wall", () -> new WarpedWallBlock());
 	public static final RegistryObject<Block> DIRT_SLAB = REGISTRY.register("dirt_slab", () -> new DirtSlabBlock());
 	public static final RegistryObject<Block> GRASS_SLAB = REGISTRY.register("grass_slab", () -> new GrassSlabBlock());
-
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
-		@SubscribeEvent
-		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
-			GrassSlabBlock.blockColorLoad(event);
-		}
-	}
 }
