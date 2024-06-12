@@ -1,9 +1,11 @@
 {
-  "parent": "block/slab",
+  "parent": "block/grass_block",
   "textures": {
     "bottom": "test:block/dirt",
-    "top": "test:block/testherb",
-    "side": "test:block/grass_overlay_side"
+    "top": "test:block/grass_block_top",
+    "side": "test:block/grass_overlay_side",
+    "overlay": "test:block/grass_slab_side_overlay",
+    "particle": "test:block/dirt"
   },
   "render_type": "cutout"
 }

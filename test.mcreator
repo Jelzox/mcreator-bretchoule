@@ -751,6 +751,76 @@
         ]
       },
       "path": "~/Wall"
+    },
+    {
+      "name": "DirtSlabConversion",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_slab_conversion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/dirt_slab_conversion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Dirt"
+    },
+    {
+      "name": "DirtSlabConversion2",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_slab_conversion_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/dirt_slab_conversion_2.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Dirt"
+    },
+    {
+      "name": "GrassSlabConversion",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_slab_conversion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/grass_slab_conversion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Grass"
+    },
+    {
+      "name": "GrassBlock",
+      "type": "loottable",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/loot_tables/blocks/grass_block.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Grass"
+    },
+    {
+      "name": "GrassSlabConversion2",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_slab_conversion_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/grass_slab_conversion_2.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Grass"
     }
   ],
   "variable_elements": [],
@@ -794,12 +864,12 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_alt_slab": "Oak Vertical Slab",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_secret_door": "Secret Oak Door",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
-      "block.ultad.secret_oak_door": "Secret Oak Door",
       "gui.test.gui_test_gel.Glacon2": "Glacon2",
+      "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",
