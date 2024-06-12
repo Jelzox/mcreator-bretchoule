@@ -1,9 +1,0 @@
-{
-  "parent": "ultad:custom/vslab",
-  "textures": {
-    "all": "ultad:block/oak_planks",
-    "particle": "ultad:block/oak_planks",
-    "1": "ultad:block/oak_planks"
-  },
-  "render_type": "solid"
-}

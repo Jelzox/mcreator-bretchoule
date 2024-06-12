@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_right_open",
-  "textures": {
-    "bottom": "ultad:block/glass",
-    "top": "ultad:block/glass"
-  },
-  "render_type": "translucent"
-}

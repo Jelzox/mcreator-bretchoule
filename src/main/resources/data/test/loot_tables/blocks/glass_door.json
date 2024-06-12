@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "test:blocks/glass_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "test:glass_door",
+          "conditions": [
+            {
+              "block": "test:glass_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

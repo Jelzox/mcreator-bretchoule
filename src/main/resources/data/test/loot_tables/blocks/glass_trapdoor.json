@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "test:blocks/glass_trapdoor",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "test:glass_trapdoor"
+        }
+      ]
+    }
+  ]
+}
