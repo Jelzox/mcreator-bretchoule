@@ -93,51 +93,6 @@
       "path": "~/Slabs Overhaul"
     },
     {
-      "name": "SecretOakDoor",
-      "type": "block",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "secret_oak_door",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/block/SecretOakDoorBlock.java",
-          "src/main/resources/assets/test/models/block/secret_oak_door_bottom_right.json",
-          "src/main/resources/assets/test/blockstates/secret_oak_door.json",
-          "src/main/resources/assets/test/models/block/secret_oak_door_bottom_left_open.json",
-          "src/main/resources/data/test/loot_tables/blocks/secret_oak_door.json",
-          "src/main/resources/assets/test/models/block/secret_oak_door_top_right_open.json",
-          "src/main/resources/assets/test/models/block/secret_oak_door_top_left_open.json",
-          "src/main/resources/assets/test/models/block/secret_oak_door_bottom_right_open.json",
-          "src/main/resources/assets/test/models/item/secret_oak_door.json",
-          "src/main/resources/assets/test/models/block/secret_oak_door_top_right.json",
-          "src/main/resources/assets/test/models/block/secret_oak_door_top_left.json",
-          "src/main/resources/assets/test/models/block/secret_oak_door_bottom_left.json"
-        ]
-      },
-      "path": "~/Secret Entrances"
-    },
-    {
-      "name": "SecretOakTrapdoor",
-      "type": "block",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "secret_oak_trapdoor",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/block/SecretOakTrapdoorBlock.java",
-          "src/main/resources/assets/test/models/item/secret_oak_trapdoor.json",
-          "src/main/resources/assets/test/models/block/secret_oak_trapdoor_open.json",
-          "src/main/resources/assets/test/models/block/secret_oak_trapdoor.json",
-          "src/main/resources/data/test/loot_tables/blocks/secret_oak_trapdoor.json",
-          "src/main/resources/assets/test/models/block/secret_oak_trapdoor_top.json",
-          "src/main/resources/assets/test/blockstates/secret_oak_trapdoor.json"
-        ]
-      },
-      "path": "~/Secret Entrances"
-    },
-    {
       "name": "GlassDoor",
       "type": "block",
       "sortid": 31,
@@ -235,14 +190,59 @@
         ]
       },
       "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "OakSecretDoor",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_secret_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/item/oak_secret_door.json",
+          "src/main/resources/assets/test/models/block/oak_secret_door_bottom_right.json",
+          "src/main/resources/assets/test/models/block/oak_secret_door_top_right.json",
+          "src/main/resources/assets/test/models/block/oak_secret_door_bottom_left.json",
+          "src/main/resources/assets/test/models/block/oak_secret_door_bottom_left_open.json",
+          "src/main/resources/assets/test/models/block/oak_secret_door_bottom_right_open.json",
+          "src/main/resources/data/test/loot_tables/blocks/oak_secret_door.json",
+          "src/main/resources/assets/test/models/block/oak_secret_door_top_right_open.json",
+          "src/main/resources/assets/test/blockstates/oak_secret_door.json",
+          "src/main/resources/assets/test/models/block/oak_secret_door_top_left_open.json",
+          "src/main/java/net/mcreator/test/block/OakSecretDoorBlock.java",
+          "src/main/resources/assets/test/models/block/oak_secret_door_top_left.json"
+        ]
+      },
+      "path": "~/Secret Entrances"
+    },
+    {
+      "name": "OakSecretTrapdoor",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_secret_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/block/OakSecretTrapdoorBlock.java",
+          "src/main/resources/data/test/loot_tables/blocks/oak_secret_trapdoor.json",
+          "src/main/resources/assets/test/blockstates/oak_secret_trapdoor.json",
+          "src/main/resources/assets/test/models/block/oak_secret_trapdoor_open.json",
+          "src/main/resources/assets/test/models/item/oak_secret_trapdoor.json",
+          "src/main/resources/assets/test/models/block/oak_secret_trapdoor.json",
+          "src/main/resources/assets/test/models/block/oak_secret_trapdoor_top.json"
+        ]
+      },
+      "path": "~/Secret Entrances"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:SecretOakTrapdoor",
-      "~CUSTOM:SecretOakDoor"
+      "~CUSTOM:OakSecretTrapdoor",
+      "~CUSTOM:OakSecretDoor"
     ]
   },
   "language_map": {
@@ -254,6 +254,7 @@
       "item_group.test.secret_entrances": "Secret Entrances",
       "block.test.oak_alt_slab": "Oak Vertical Slab",
       "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_secret_door": "Secret Oak Door",
       "block.test.glass_door": "Test Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.ultad.glass_trapdoor": "Test Glass Door",
@@ -261,8 +262,7 @@
       "item_group.ultad.test": "VerticalSlabs",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
       "block.ultad.glass_door": "Test Glass Door",
-      "block.test.secret_oak_door": "Secret Oak Door",
-      "block.test.secret_oak_trapdoor": "Secret Oak Trap"
+      "block.test.oak_secret_trapdoor": "Secret Oak Trap"
     }
   },
   "foldersRoot": {

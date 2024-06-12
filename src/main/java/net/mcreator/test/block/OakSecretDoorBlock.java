@@ -12,8 +12,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class SecretOakDoorBlock extends DoorBlock {
-	public SecretOakDoorBlock() {
+public class OakSecretDoorBlock extends DoorBlock {
+	public OakSecretDoorBlock() {
 		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.WOOL).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape(),
 				BlockSetType.OAK);
 	}

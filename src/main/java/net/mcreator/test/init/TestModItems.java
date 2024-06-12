@@ -18,10 +18,10 @@ import net.mcreator.test.TestMod;
 public class TestModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MODID);
 	public static final RegistryObject<Item> OAK_ALT_SLAB = block(TestModBlocks.OAK_ALT_SLAB);
-	public static final RegistryObject<Item> SECRET_OAK_DOOR = doubleBlock(TestModBlocks.SECRET_OAK_DOOR);
-	public static final RegistryObject<Item> SECRET_OAK_TRAPDOOR = block(TestModBlocks.SECRET_OAK_TRAPDOOR);
 	public static final RegistryObject<Item> GLASS_DOOR = doubleBlock(TestModBlocks.GLASS_DOOR);
 	public static final RegistryObject<Item> GLASS_TRAPDOOR = block(TestModBlocks.GLASS_TRAPDOOR);
+	public static final RegistryObject<Item> OAK_SECRET_DOOR = doubleBlock(TestModBlocks.OAK_SECRET_DOOR);
+	public static final RegistryObject<Item> OAK_SECRET_TRAPDOOR = block(TestModBlocks.OAK_SECRET_TRAPDOOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

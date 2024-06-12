@@ -19,10 +19,10 @@ public class TestModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TestMod.MODID);
 	public static final RegistryObject<CreativeModeTab> SECRET_ENTRANCES = REGISTRY.register("secret_entrances",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.test.secret_entrances")).icon(() -> new ItemStack(Blocks.BEDROCK)).displayItems((parameters, tabData) -> {
-				tabData.accept(TestModBlocks.SECRET_OAK_DOOR.get().asItem());
-				tabData.accept(TestModBlocks.SECRET_OAK_TRAPDOOR.get().asItem());
 				tabData.accept(TestModBlocks.GLASS_DOOR.get().asItem());
 				tabData.accept(TestModBlocks.GLASS_TRAPDOOR.get().asItem());
+				tabData.accept(TestModBlocks.OAK_SECRET_DOOR.get().asItem());
+				tabData.accept(TestModBlocks.OAK_SECRET_TRAPDOOR.get().asItem());
 			})
 
 					.build());
