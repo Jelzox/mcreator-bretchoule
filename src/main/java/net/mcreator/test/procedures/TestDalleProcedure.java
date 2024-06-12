@@ -34,36 +34,37 @@ public class TestDalleProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OAK_SLAB && entity.isShiftKeyDown()) {
-			{
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = TestModBlocks.VERTICAL_SLAB.get().defaultBlockState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.getValue(_property) != null)
-						try {
-							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-						} catch (Exception e) {
-						}
+		if (entity.isShiftKeyDown()) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.OAK_SLAB) {
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = TestModBlocks.VERTICAL_SLAB.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
 				}
-				world.setBlock(_bp, _bs, 3);
-			}
-		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TestModBlocks.VERTICAL_SLAB.get() && entity.isShiftKeyDown()) {
-			{
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = Blocks.OAK_SLAB.defaultBlockState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.getValue(_property) != null)
-						try {
-							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-						} catch (Exception e) {
-						}
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TestModBlocks.VERTICAL_SLAB.get()) {
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = Blocks.OAK_SLAB.defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
 				}
-				world.setBlock(_bp, _bs, 3);
 			}
 		}
 	}

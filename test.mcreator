@@ -177,6 +177,9 @@
       "locked_code": false,
       "registry_name": "test_dalle",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/TestDalleProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
