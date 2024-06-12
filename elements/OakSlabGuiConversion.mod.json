@@ -21,10 +21,10 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:OakAltSlab"
+        "value": ""
       },
       {
-        "value": "CUSTOM:OakAltSlab"
+        "value": "Blocks.WOODEN_SLAB#0"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.PLANKS#0"
+      "value": "CUSTOM:OakAltSlab"
     },
-    "name": "oak_vertical_slab_fusion",
+    "name": "oak_slab_gui_conversion",
     "namespace": "mod"
   }
 }

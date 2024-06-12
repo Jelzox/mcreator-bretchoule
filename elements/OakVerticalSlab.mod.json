@@ -42,7 +42,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:OakAltSlab"
     },
-    "name": "oak_vertical_slab_craft_2",
+    "name": "oak_vertical_slab",
     "namespace": "mod"
   }
 }

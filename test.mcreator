@@ -295,34 +295,6 @@
       "path": "~/Secret Entrances"
     },
     {
-      "name": "OakVerticalSlabFusion",
-      "type": "recipe",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_vertical_slab_fusion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/oak_vertical_slab_fusion.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul/OakVerticalSlab"
-    },
-    {
-      "name": "OakVerticalSlabCutter",
-      "type": "recipe",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_vertical_slab_cutter",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/oak_vertical_slab_cutter.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul/OakVerticalSlab"
-    },
-    {
       "name": "BirchAltSlab",
       "type": "block",
       "sortid": 46,
@@ -405,20 +377,6 @@
       "path": "~/Slabs Overhaul"
     },
     {
-      "name": "OakVerticalSlabCraft2",
-      "type": "recipe",
-      "sortid": 50,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_vertical_slab_craft_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/oak_vertical_slab_craft_2.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul/OakVerticalSlab"
-    },
-    {
       "name": "BirchVerticalSlabFusion",
       "type": "recipe",
       "sortid": 51,
@@ -431,6 +389,62 @@
         ]
       },
       "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "OakVerticalSlabGuiFusion",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_vertical_slab_gui_fusion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/oak_vertical_slab_gui_fusion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
+    },
+    {
+      "name": "OakSlabGuiConversion",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_slab_gui_conversion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/oak_slab_gui_conversion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
+    },
+    {
+      "name": "OakVerticalSlab",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_vertical_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/oak_vertical_slab.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
+    },
+    {
+      "name": "OakVerticalSlabGuiConversion",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_vertical_slab_gui_conversion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/oak_vertical_slab_gui_conversion.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/OakVerticalSlab"
     }
   ],
   "variable_elements": [],
