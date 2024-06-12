@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "oakslab:default",
+    "customModelName": "vslab:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
