@@ -690,7 +690,7 @@
       "name": "GrassTestBlockM",
       "type": "block",
       "sortid": 67,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "grass_test_block_m",
       "metadata": {
@@ -708,7 +708,7 @@
       "name": "ExpeditionBlock",
       "type": "block",
       "sortid": 68,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "expedition_block",
       "metadata": {
@@ -726,7 +726,7 @@
       "name": "ProcedurCommand",
       "type": "procedure",
       "sortid": 69,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "procedur_command",
       "metadata": {
@@ -758,7 +758,7 @@
       "name": "GuiTestGel",
       "type": "gui",
       "sortid": 71,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "gui_test_gel",
       "metadata": {
@@ -792,19 +792,6 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
-    ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
-      "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
-      "~CUSTOM:SpruceWall",
-      "~CUSTOM:JungleWall",
-      "~CUSTOM:BirchWall",
-      "~CUSTOM:OakWall"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:DirtSlab"
     ],
@@ -821,6 +808,19 @@
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:WarpedWall",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:AcaciaWall",
+      "~CUSTOM:DarkOakSpruce",
+      "~CUSTOM:SpruceWall",
+      "~CUSTOM:JungleWall",
+      "~CUSTOM:BirchWall",
+      "~CUSTOM:OakWall"
     ]
   },
   "language_map": {
