@@ -703,6 +703,71 @@
         ]
       },
       "path": "~/Test Zone"
+    },
+    {
+      "name": "ExpeditionBlock",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expedition_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/block/expedition_block.json",
+          "src/main/java/net/mcreator/test/block/ExpeditionBlockBlock.java",
+          "src/main/resources/assets/test/blockstates/expedition_block.json",
+          "src/main/resources/data/test/loot_tables/blocks/expedition_block.json",
+          "src/main/resources/assets/test/models/item/expedition_block.json"
+        ]
+      },
+      "path": "~/Test Zone"
+    },
+    {
+      "name": "ProcedurCommand",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "procedur_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/ProcedurCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Test Zone"
+    },
+    {
+      "name": "GuiTestGel",
+      "type": "gui",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gui_test_gel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/world/inventory/GuiTestGelMenu.java",
+          "src/main/java/net/mcreator/test/client/gui/GuiTestGelScreen.java"
+        ]
+      },
+      "path": "~/Test Zone"
     }
   ],
   "variable_elements": [],
@@ -741,18 +806,20 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_alt_slab": "Oak Vertical Slab",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_secret_door": "Secret Oak Door",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.dark_oak_spruce": "Dark Oak Wall",
+      "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",
       "block.ultad.glass_door": "Test Glass Door",
       "block.test.glass_trapdoor": "Test Glass Door",
       "item_group.ultad.secret_entrances": "Secret Entrances",
       "item_group.test.vertical_slabs": "Vertical Slabs",
+      "gui.test.gui_test_gel.button_convertir_en_glace": "Convertir en glace",
       "block.test.acacia_wall": "Acacia Wall",
       "advancements.i_see_you.title": "I Can See You",
       "block.test.birch_wall": "Birch Wall",
