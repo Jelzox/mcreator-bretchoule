@@ -753,20 +753,6 @@
       "path": "~/Wall"
     },
     {
-      "name": "DirtSlabConversion",
-      "type": "recipe",
-      "sortid": 73,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_slab_conversion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/dirt_slab_conversion.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul/Dirt"
-    },
-    {
       "name": "DirtSlabConversion2",
       "type": "recipe",
       "sortid": 74,
@@ -776,6 +762,20 @@
       "metadata": {
         "files": [
           "src/main/resources/data/test/recipes/dirt_slab_conversion_2.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Dirt"
+    },
+    {
+      "name": "DirtSlabConversion",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_slab_conversion",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/dirt_slab_conversion.json"
         ]
       },
       "path": "~/Slabs Overhaul/Dirt"
@@ -795,6 +795,20 @@
       "path": "~/Slabs Overhaul/Grass"
     },
     {
+      "name": "GrassSlabConversion2",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grass_slab_conversion_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/grass_slab_conversion_2.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Grass"
+    },
+    {
       "name": "GrassBlock",
       "type": "loottable",
       "sortid": 76,
@@ -809,18 +823,60 @@
       "path": "~/Slabs Overhaul/Grass"
     },
     {
-      "name": "GrassSlabConversion2",
+      "name": "JungleWallC",
       "type": "recipe",
-      "sortid": 77,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grass_slab_conversion_2",
+      "registry_name": "jungle_wall_c",
       "metadata": {
         "files": [
-          "src/main/resources/data/test/recipes/grass_slab_conversion_2.json"
+          "src/main/resources/data/test/recipes/jungle_wall_c.json"
         ]
       },
-      "path": "~/Slabs Overhaul/Grass"
+      "path": "~/Wall"
+    },
+    {
+      "name": "SpruceWallC",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_wall_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/spruce_wall_c.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "BirchWallC",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_wall_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/birch_wall_c.json"
+        ]
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "AcaciaWallC",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_wall_c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/acacia_wall_c.json"
+        ]
+      },
+      "path": "~/Wall"
     }
   ],
   "variable_elements": [],
