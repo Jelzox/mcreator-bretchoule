@@ -695,13 +695,11 @@
       "registry_name": "grass_slab",
       "metadata": {
         "files": [
-          "src/main/resources/data/test/loot_tables/blocks/grass_slab.json",
-          "src/main/resources/assets/test/models/block/grass_slab_full.json",
-          "src/main/resources/assets/test/models/block/grass_slab.json",
-          "src/main/java/net/mcreator/test/block/GrassSlabBlock.java",
-          "src/main/resources/assets/test/models/block/grass_slab_top.json",
           "src/main/resources/assets/test/models/item/grass_slab.json",
-          "src/main/resources/assets/test/blockstates/grass_slab.json"
+          "src/main/resources/assets/test/models/block/grass_slab.json",
+          "src/main/resources/assets/test/blockstates/grass_slab.json",
+          "src/main/java/net/mcreator/test/block/GrassSlabBlock.java",
+          "src/main/resources/data/test/loot_tables/blocks/grass_slab.json"
         ]
       },
       "path": "~/Slabs Overhaul/Grass"
@@ -756,9 +754,9 @@
       "~CUSTOM:OakWall"
     ],
     "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:GrassSlab",
       "~CUSTOM:DirtSlab"
     ],
+    "BLOCKS:minecraft:logs": [],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
@@ -772,16 +770,20 @@
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
-    ]
+    ],
+    "BLOCKS:minecraft:dirt": [
+      "CUSTOM:GrassSlab"
+    ],
+    "BIOMES:minecraft:is_overworld": []
   },
   "language_map": {
     "en_us": {
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_alt_slab": "Oak Vertical Slab",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_secret_door": "Secret Oak Door",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.dark_oak_spruce": "Dark Oak Wall",

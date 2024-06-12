@@ -1,13 +1,7 @@
 {
   "variants": {
-    "type=bottom": {
+    "": {
       "model": "test:block/grass_slab"
-    },
-    "type=top": {
-      "model": "test:block/grass_slab_top"
-    },
-    "type=double": {
-      "model": "test:block/grass_slab_full"
     }
   }
 }
