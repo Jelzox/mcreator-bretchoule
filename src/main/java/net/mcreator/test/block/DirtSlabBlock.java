@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class DirtSlabBlock extends SlabBlock {
 	public DirtSlabBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).dynamicShape());
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(0.5f, 10f).dynamicShape());
 	}
 
 	@Override
