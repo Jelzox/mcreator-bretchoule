@@ -10,8 +10,8 @@
     "test:birch_wall",
     "test:oak_wall",
     "test:birch_alt_slab",
-    "test:oak_alt_slab",
     "test:oak_secret_trapdoor",
-    "test:oak_secret_door"
+    "test:oak_secret_door",
+    "test:oak_alt_slab"
   ]
 }
