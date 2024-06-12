@@ -19,8 +19,6 @@ import net.mcreator.test.init.TestModBlocks;
 
 import javax.annotation.Nullable;
 
-import java.util.Map;
-
 @Mod.EventBusSubscriber
 public class SlabToBlockProcedure {
 	@SubscribeEvent
@@ -64,20 +62,7 @@ public class SlabToBlockProcedure {
 				return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
 			}
 		}.with(TestModBlocks.VERTICAL_SLAB.get().defaultBlockState(), Direction.NORTH)).getBlock()) {
-			{
-				BlockPos _bp = BlockPos.containing(x, y, z - 1);
-				BlockState _bs = Blocks.AIR.defaultBlockState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.getValue(_property) != null)
-						try {
-							_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-						} catch (Exception e) {
-						}
-				}
-				world.setBlock(_bp, _bs, 3);
-			}
+			world.setBlock(BlockPos.containing(x, y, z - 1), Blocks.AIR.defaultBlockState(), 3);
 		}
 	}
 }
