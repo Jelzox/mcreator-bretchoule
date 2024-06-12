@@ -2,10 +2,10 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "oak_planks",
-    "textureTop": "",
+    "texture": "dirt",
+    "textureTop": "dirt",
     "textureLeft": "",
-    "textureFront": "",
+    "textureFront": "dirt",
     "textureRight": "",
     "textureBack": "",
     "renderType": 11,
@@ -16,10 +16,10 @@
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Wall",
+    "blockBase": "Slab",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -34,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Oak Wall",
+    "name": "Dirt Slab",
     "specialInformation": {
       "fixedValue": []
     },
@@ -45,7 +45,7 @@
     "creativeTab": {
       "value": "CUSTOM:VerticalSlabs"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -57,7 +57,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "EARTH"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -71,8 +71,8 @@
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "RAIL",
-    "flammability": 20,
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -82,7 +82,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -101,7 +101,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -122,11 +122,15 @@
     "fluidRestrictions": [],
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 200
+    "maxGenerateHeight": 64
   }
 }

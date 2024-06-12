@@ -471,10 +471,7 @@
         "files": [
           "src/main/java/net/mcreator/test/block/OakWallBlock.java",
           "src/main/resources/assets/test/models/block/oak_wall_side_tall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/oak_wall.json",
           "src/main/resources/assets/test/models/block/oak_wall_post.json",
-          "src/main/resources/data/test/worldgen/configured_feature/oak_wall.json",
-          "src/main/resources/data/test/forge/biome_modifier/oak_wall_biome_modifier.json",
           "src/main/resources/data/test/loot_tables/blocks/oak_wall.json",
           "src/main/resources/assets/test/models/block/oak_wall.json",
           "src/main/resources/assets/test/blockstates/oak_wall.json",
@@ -651,21 +648,31 @@
         ]
       },
       "path": "~/Wall"
+    },
+    {
+      "name": "DirtSlab",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_slab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/block/DirtSlabBlock.java",
+          "src/main/resources/assets/test/models/block/dirt_slab.json",
+          "src/main/resources/assets/test/models/block/dirt_slab_full.json",
+          "src/main/resources/assets/test/models/block/dirt_slab_top.json",
+          "src/main/resources/assets/test/blockstates/dirt_slab.json",
+          "src/main/resources/data/test/loot_tables/blocks/dirt_slab.json",
+          "src/main/resources/assets/test/models/item/dirt_slab.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul/Dirt"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
-      "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
-      "~CUSTOM:SpruceWall",
-      "~CUSTOM:JungleWall",
-      "~CUSTOM:BirchWall",
-      "~CUSTOM:OakWall"
-    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
@@ -679,6 +686,19 @@
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:DirtSlab"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:WarpedWall",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:AcaciaWall",
+      "~CUSTOM:DarkOakSpruce",
+      "~CUSTOM:SpruceWall",
+      "~CUSTOM:JungleWall",
+      "~CUSTOM:BirchWall",
+      "~CUSTOM:OakWall"
     ]
   },
   "language_map": {
@@ -686,9 +706,9 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_secret_door": "Secret Oak Door",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_alt_slab": "Oak Vertical Slab",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_secret_door": "Secret Oak Door",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.dark_oak_spruce": "Dark Oak Wall",
@@ -702,6 +722,7 @@
       "advancements.i_see_you.title": "I Can See You",
       "block.test.birch_wall": "Birch Wall",
       "block.test.crimson_wall": "Acacia Wall",
+      "block.test.dirt_slab": "Dirt Slab",
       "block.ultad.glass_trapdoor": "Test Glass Door",
       "block.test.warped_wall": "Acacia Wall",
       "advancements.secret_avancement.descr": "The player opened a secret door",
@@ -726,6 +747,10 @@
         "children": [
           {
             "name": "OakVerticalSlab",
+            "children": []
+          },
+          {
+            "name": "Dirt",
             "children": []
           }
         ]

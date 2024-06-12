@@ -31,6 +31,7 @@ public class TestModItems {
 	public static final RegistryObject<Item> ACACIA_WALL = block(TestModBlocks.ACACIA_WALL);
 	public static final RegistryObject<Item> CRIMSON_WALL = block(TestModBlocks.CRIMSON_WALL);
 	public static final RegistryObject<Item> WARPED_WALL = block(TestModBlocks.WARPED_WALL);
+	public static final RegistryObject<Item> DIRT_SLAB = block(TestModBlocks.DIRT_SLAB);
 
 	// Start of user code block custom items
 	// End of user code block custom items

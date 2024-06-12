@@ -19,6 +19,7 @@ import net.mcreator.test.block.OakAltSlabBlock;
 import net.mcreator.test.block.JungleWallBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
 import net.mcreator.test.block.GlassDoorBlock;
+import net.mcreator.test.block.DirtSlabBlock;
 import net.mcreator.test.block.DarkOakSpruceBlock;
 import net.mcreator.test.block.CrimsonWallBlock;
 import net.mcreator.test.block.BirchWallBlock;
@@ -42,6 +43,7 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> ACACIA_WALL = REGISTRY.register("acacia_wall", () -> new AcaciaWallBlock());
 	public static final RegistryObject<Block> CRIMSON_WALL = REGISTRY.register("crimson_wall", () -> new CrimsonWallBlock());
 	public static final RegistryObject<Block> WARPED_WALL = REGISTRY.register("warped_wall", () -> new WarpedWallBlock());
+	public static final RegistryObject<Block> DIRT_SLAB = REGISTRY.register("dirt_slab", () -> new DirtSlabBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
