@@ -9,8 +9,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.test.init.TestModBlocks;
-
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
@@ -27,7 +25,7 @@ public class SlabToBlockProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == TestModBlocks.VERTICAL_SLAB.get()) {
+		if (true) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.OAK_PLANKS.defaultBlockState(), 3);
 		}
 	}
