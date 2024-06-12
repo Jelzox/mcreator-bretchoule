@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "result": {
+    "item": "test:oak_alt_slab",
+    "count": 1
+  }
+}
