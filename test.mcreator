@@ -42,19 +42,6 @@
       }
     },
     {
-      "name": "StoneCutter",
-      "type": "recipe",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stone_cutter",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/recipes/stone_cutter.json"
-        ]
-      }
-    },
-    {
       "name": "SlabToBlock",
       "type": "procedure",
       "sortid": 5,
@@ -190,9 +177,6 @@
       "locked_code": false,
       "registry_name": "test_dalle",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/procedures/TestDalleProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -214,6 +198,32 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "SlabToVslab",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slab_to_vslab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/slab_to_vslab.json"
+        ]
+      }
+    },
+    {
+      "name": "VslabToSlab",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vslab_to_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/vslab_to_slab.json"
         ]
       }
     }

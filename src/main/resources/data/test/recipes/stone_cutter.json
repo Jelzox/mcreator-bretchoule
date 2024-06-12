@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "group": "stctr",
-  "count": 2,
-  "ingredient": {
-    "item": "minecraft:oak_planks"
-  },
-  "result": "test:vertical_slab"
-}
