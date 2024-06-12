@@ -7,9 +7,11 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -18,6 +20,7 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.FaceAttachedHorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
@@ -27,11 +30,12 @@ import net.minecraft.core.BlockPos;
 
 public class VerticalSlabBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public VerticalSlabBlock() {
 		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL).setValue(WATERLOGGED, false));
 	}
 
 	@Override
@@ -52,22 +56,38 @@ public class VerticalSlabBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 16, 8);
-			case NORTH -> box(0, 0, 8, 16, 16, 16);
-			case EAST -> box(0, 0, 0, 8, 16, 16);
-			case WEST -> box(8, 0, 0, 16, 16, 16);
+			default -> switch (state.getValue(FACE)) {
+				case FLOOR -> box(0, 0, 0, 16, 16, 8);
+				case WALL -> box(0, 8, 0, 16, 16, 16);
+				case CEILING -> box(0, 0, 0, 16, 16, 8);
+			};
+			case NORTH -> switch (state.getValue(FACE)) {
+				case FLOOR -> box(0, 0, 8, 16, 16, 16);
+				case WALL -> box(0, 8, 0, 16, 16, 16);
+				case CEILING -> box(0, 0, 8, 16, 16, 16);
+			};
+			case EAST -> switch (state.getValue(FACE)) {
+				case FLOOR -> box(0, 0, 0, 8, 16, 16);
+				case WALL -> box(0, 8, 0, 16, 16, 16);
+				case CEILING -> box(0, 0, 0, 8, 16, 16);
+			};
+			case WEST -> switch (state.getValue(FACE)) {
+				case FLOOR -> box(8, 0, 0, 16, 16, 16);
+				case WALL -> box(0, 8, 0, 16, 16, 16);
+				case CEILING -> box(8, 0, 0, 16, 16, 16);
+			};
 		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING, WATERLOGGED);
+		builder.add(FACING, FACE, WATERLOGGED);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
-		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
+		return this.defaultBlockState().setValue(FACE, faceForDirection(context.getNearestLookingDirection())).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -76,6 +96,13 @@ public class VerticalSlabBlock extends Block implements SimpleWaterloggedBlock {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+	}
+
+	private AttachFace faceForDirection(Direction direction) {
+		if (direction.getAxis() == Direction.Axis.Y)
+			return direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR;
+		else
+			return AttachFace.WALL;
 	}
 
 	@Override

@@ -20,10 +20,10 @@
       "registry_name": "vertical_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/test/models/item/vertical_slab.json",
-          "src/main/resources/assets/test/blockstates/vertical_slab.json",
-          "src/main/resources/assets/test/models/block/vertical_slab.json",
           "src/main/java/net/mcreator/test/block/VerticalSlabBlock.java",
+          "src/main/resources/assets/test/models/item/vertical_slab.json",
+          "src/main/resources/assets/test/models/block/vertical_slab.json",
+          "src/main/resources/assets/test/blockstates/vertical_slab.json",
           "src/main/resources/data/test/loot_tables/blocks/vertical_slab.json"
         ]
       }

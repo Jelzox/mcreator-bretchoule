@@ -11,11 +11,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.test.block.VerticalSlabBlock;
+import net.mcreator.test.block.SecretOakDoorBlock;
 import net.mcreator.test.TestMod;
 
 public class TestModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MODID);
 	public static final RegistryObject<Block> VERTICAL_SLAB = REGISTRY.register("vertical_slab", () -> new VerticalSlabBlock());
+	public static final RegistryObject<Block> SECRET_OAK_DOOR = REGISTRY.register("secret_oak_door", () -> new SecretOakDoorBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
