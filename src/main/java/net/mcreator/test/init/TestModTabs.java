@@ -19,9 +19,12 @@ public class TestModTabs {
 	public static final RegistryObject<CreativeModeTab> TEST = REGISTRY.register("test",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.test.test")).icon(() -> new ItemStack(TestModBlocks.VERTICAL_SLAB.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TestModBlocks.VERTICAL_SLAB.get().asItem());
+				tabData.accept(TestModBlocks.TEST_GLASS_DOOR.get().asItem());
+				tabData.accept(TestModBlocks.TEST_GLASS_TRAP.get().asItem());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> SECRET_BLOCK = REGISTRY.register("secret_block",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.test.secret_block")).icon(() -> new ItemStack(TestModBlocks.SECRET_OAK_DOOR.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TestModBlocks.SECRET_OAK_DOOR.get().asItem());
+				tabData.accept(TestModBlocks.SECRET_OAK_TRAP.get().asItem());
 			}).withSearchBar().build());
 }

@@ -19,6 +19,9 @@ public class TestModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MODID);
 	public static final RegistryObject<Item> VERTICAL_SLAB = block(TestModBlocks.VERTICAL_SLAB);
 	public static final RegistryObject<Item> SECRET_OAK_DOOR = doubleBlock(TestModBlocks.SECRET_OAK_DOOR);
+	public static final RegistryObject<Item> SECRET_OAK_TRAP = block(TestModBlocks.SECRET_OAK_TRAP);
+	public static final RegistryObject<Item> TEST_GLASS_DOOR = doubleBlock(TestModBlocks.TEST_GLASS_DOOR);
+	public static final RegistryObject<Item> TEST_GLASS_TRAP = block(TestModBlocks.TEST_GLASS_TRAP);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "test:secret_oak_trap",
     "test:secret_oak_door"
   ]
 }
