@@ -3,58 +3,57 @@
   "_type": "block",
   "definition": {
     "texture": "oak_planks",
-    "textureTop": "oak_planks",
+    "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
-    "rotationMode": 0,
+    "renderType": 2,
+    "customModelName": "vslab:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Door",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
-    "connectedSides": false,
+    "connectedSides": true,
     "transparencyType": "SOLID",
-    "disableOffset": false,
+    "disableOffset": true,
     "boundingBoxes": [
       {
         "mx": 0.0,
         "my": 0.0,
-        "mz": 0.0,
+        "mz": 8.0,
         "Mx": 16.0,
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Secret Oak Door",
+    "name": "Oak Vertical Slab",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:SecretEntrances"
+      "value": "CUSTOM:VerticalSlabs"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.WOODEN_SLAB#0"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
       "value": "WOOD"
@@ -66,7 +65,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "CLOTH",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -101,7 +100,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

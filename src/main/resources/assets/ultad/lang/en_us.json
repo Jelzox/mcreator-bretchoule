@@ -1,0 +1,18 @@
+{
+  "block.ultad.oak_alt_slab": "Oak Vertical Slab",
+  "block.test.glass_trapdoor": "Test Glass Door",
+  "item_group.ultad.secret_entrances": "Secret Entrances",
+  "item_group.test.vertical_slabs": "Vertical Slabs",
+  "item_group.test.secret_entrances": "Secret Entrances",
+  "block.test.oak_alt_slab": "Oak Vertical Slab",
+  "item_group.test.test": "VerticalSlabs",
+  "block.test.glass_door": "Test Glass Door",
+  "block.ultad.secret_oak_door": "Secret Oak Door",
+  "block.ultad.glass_trapdoor": "Test Glass Door",
+  "item_group.ultad.vertical_slabs": "Vertical Slabs",
+  "item_group.ultad.test": "VerticalSlabs",
+  "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
+  "block.ultad.glass_door": "Test Glass Door",
+  "block.test.secret_oak_door": "Secret Oak Door",
+  "block.test.secret_oak_trapdoor": "Secret Oak Trap"
+}

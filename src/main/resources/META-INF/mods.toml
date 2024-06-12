@@ -3,17 +3,17 @@ loaderVersion="[47,)"
 license="Not specified"
 
 [[mods]]
-modId="test"
+modId="ultad"
 version="1.0.0"
-displayName="Test"
+displayName="Ultimate Additions"
 displayURL="https://mcreator.net"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="phibook, MCreator"
+credits="Created using the MCreator mod maker - https://mcreator.net/about"
+authors="Jelzox, bretchou"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.test]]
+[[dependencies.ultad]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"

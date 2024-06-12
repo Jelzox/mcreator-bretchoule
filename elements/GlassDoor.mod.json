@@ -2,8 +2,8 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "oak_planks",
-    "textureTop": "oak_planks",
+    "texture": "glass",
+    "textureTop": "glass",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
@@ -21,7 +21,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Secret Oak Door",
+    "name": "Test Glass Door",
     "specialInformation": {
       "fixedValue": []
     },
@@ -45,7 +45,7 @@
     "creativeTab": {
       "value": "CUSTOM:SecretEntrances"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -54,10 +54,10 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "WOOD"
+      "value": "GLASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -66,7 +66,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "CLOTH",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -82,7 +82,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "GLASS"
     },
     "breakSound": {
       "value": ""
