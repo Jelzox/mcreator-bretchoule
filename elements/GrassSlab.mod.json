@@ -4,8 +4,8 @@
   "definition": {
     "texture": "dirt",
     "textureTop": "grass_block_top",
-    "textureLeft": "",
-    "textureFront": "dirt",
+    "textureLeft": "grass_block_side_overlay",
+    "textureFront": "grass_block_side_overlay",
     "textureRight": "",
     "textureBack": "",
     "renderType": 110,
