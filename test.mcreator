@@ -84,10 +84,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/test/models/item/oak_alt_slab.json",
-          "src/main/resources/data/test/loot_tables/blocks/oak_alt_slab.json",
-          "src/main/resources/assets/test/models/block/oak_alt_slab.json",
           "src/main/resources/assets/test/blockstates/oak_alt_slab.json",
-          "src/main/java/net/mcreator/test/block/OakAltSlabBlock.java"
+          "src/main/java/net/mcreator/test/block/OakAltSlabBlock.java",
+          "src/main/resources/data/test/loot_tables/blocks/oak_alt_slab.json",
+          "src/main/resources/assets/test/models/block/oak_alt_slab.json"
         ]
       },
       "path": "~/Slabs Overhaul/OakVerticalSlab"
