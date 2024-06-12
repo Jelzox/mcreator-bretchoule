@@ -5,10 +5,10 @@
     "texture": "dirt",
     "textureTop": "grass_block_top",
     "textureLeft": "",
-    "textureFront": "grass_block_side",
+    "textureFront": "dirt",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
+    "renderType": 110,
     "customModelName": "Single texture",
     "rotationMode": 0,
     "enablePitch": false,
@@ -17,11 +17,11 @@
     "itemTexture": "",
     "particleTexture": "",
     "blockBase": "Slab",
-    "tintType": "No tint",
+    "tintType": "Grass",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -57,7 +57,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "EARTH"
+      "value": "GRASS"
     },
     "tickRate": 0,
     "tickRandomly": false,
