@@ -3,7 +3,7 @@ package net.mcreator.test.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.level.BlockEvent;
 
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -24,9 +24,7 @@ import java.util.Map;
 @Mod.EventBusSubscriber
 public class SlabToBlockProcedure {
 	@SubscribeEvent
-	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-		if (event.getHand() != event.getEntity().getUsedItemHand())
-			return;
+	public static void onBlockPlace(BlockEvent.EntityPlaceEvent event) {
 		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ());
 	}
 
@@ -43,7 +41,7 @@ public class SlabToBlockProcedure {
 				_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
 				return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
 			}
-		}.with((world.getBlockState(BlockPos.containing(x, y, z))), (new Object() {
+		}.with((world.getBlockState(BlockPos.containing(x, y, z + 1))), (new Object() {
 			public Direction getDirection(BlockPos pos) {
 				BlockState _bs = world.getBlockState(pos);
 				Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -65,7 +63,7 @@ public class SlabToBlockProcedure {
 			}
 		}.with(TestModBlocks.VERTICAL_SLAB.get().defaultBlockState(), Direction.NORTH)).getBlock()) {
 			{
-				BlockPos _bp = BlockPos.containing(x, y, z + 1);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = Blocks.AIR.defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
