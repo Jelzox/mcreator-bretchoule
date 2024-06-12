@@ -3,7 +3,7 @@ package net.mcreator.ultad.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -25,7 +25,9 @@ import java.util.Map;
 @Mod.EventBusSubscriber
 public class OakSlabFusionProcedure {
 	@SubscribeEvent
-	public static void onBlockPlace(BlockEvent.EntityPlaceEvent event) {
+	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
+		if (event.getHand() != event.getEntity().getUsedItemHand())
+			return;
 		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
 	}
 
@@ -94,179 +96,182 @@ public class OakSlabFusionProcedure {
 					}
 					world.setBlock(_bp, _bs, 3);
 				}
-			}
-			if ((new Object() {
-				public BlockState with(BlockState _bs, Direction newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-						return _bs.setValue(_dp, newValue);
-					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-				}
-			}.with((world.getBlockState(BlockPos.containing(x, y, z - 1))), (new Object() {
-				public Direction getDirection(BlockPos pos) {
-					BlockState _bs = world.getBlockState(pos);
-					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (property != null && _bs.getValue(property) instanceof Direction _dir)
-						return _dir;
-					else if (_bs.hasProperty(BlockStateProperties.AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-					return Direction.NORTH;
-				}
-			}.getDirection(BlockPos.containing(x, y, z))))).getBlock() == (new Object() {
-				public BlockState with(BlockState _bs, Direction newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-						return _bs.setValue(_dp, newValue);
-					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-				}
-			}.with(UltadModBlocks.OAK_ALT_SLAB.get().defaultBlockState(), Direction.SOUTH)).getBlock()) {
-				{
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockState _bs = Blocks.AIR.defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
-							}
+			} else {
+				if ((new Object() {
+					public BlockState with(BlockState _bs, Direction newValue) {
+						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+						if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
+							return _bs.setValue(_dp, newValue);
+						_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+						return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
 					}
-					world.setBlock(_bp, _bs, 3);
-				}
-				{
-					BlockPos _bp = BlockPos.containing(x, y, z - 1);
-					BlockState _bs = Blocks.OAK_PLANKS.defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
-							}
+				}.with((world.getBlockState(BlockPos.containing(x, y, z - 1))), (new Object() {
+					public Direction getDirection(BlockPos pos) {
+						BlockState _bs = world.getBlockState(pos);
+						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+						if (property != null && _bs.getValue(property) instanceof Direction _dir)
+							return _dir;
+						else if (_bs.hasProperty(BlockStateProperties.AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+						return Direction.NORTH;
 					}
-					world.setBlock(_bp, _bs, 3);
-				}
-			}
-			if ((new Object() {
-				public BlockState with(BlockState _bs, Direction newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-						return _bs.setValue(_dp, newValue);
-					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-				}
-			}.with((world.getBlockState(BlockPos.containing(x + 1, y, z))), (new Object() {
-				public Direction getDirection(BlockPos pos) {
-					BlockState _bs = world.getBlockState(pos);
-					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (property != null && _bs.getValue(property) instanceof Direction _dir)
-						return _dir;
-					else if (_bs.hasProperty(BlockStateProperties.AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-					return Direction.NORTH;
-				}
-			}.getDirection(BlockPos.containing(x, y, z))))).getBlock() == (new Object() {
-				public BlockState with(BlockState _bs, Direction newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-						return _bs.setValue(_dp, newValue);
-					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-				}
-			}.with(UltadModBlocks.OAK_ALT_SLAB.get().defaultBlockState(), Direction.WEST)).getBlock()) {
-				{
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockState _bs = Blocks.AIR.defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
-							}
+				}.getDirection(BlockPos.containing(x, y, z))))).getBlock() == (new Object() {
+					public BlockState with(BlockState _bs, Direction newValue) {
+						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+						if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
+							return _bs.setValue(_dp, newValue);
+						_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+						return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
 					}
-					world.setBlock(_bp, _bs, 3);
-				}
-				{
-					BlockPos _bp = BlockPos.containing(x + 1, y, z);
-					BlockState _bs = Blocks.OAK_PLANKS.defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
-							}
+				}.with(UltadModBlocks.OAK_ALT_SLAB.get().defaultBlockState(), Direction.SOUTH)).getBlock()) {
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockState _bs = Blocks.AIR.defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+							if (_property != null && _bs.getValue(_property) != null)
+								try {
+									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
 					}
-					world.setBlock(_bp, _bs, 3);
-				}
-			}
-			if ((new Object() {
-				public BlockState with(BlockState _bs, Direction newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-						return _bs.setValue(_dp, newValue);
-					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-				}
-			}.with((world.getBlockState(BlockPos.containing(x - 1, y, z))), (new Object() {
-				public Direction getDirection(BlockPos pos) {
-					BlockState _bs = world.getBlockState(pos);
-					Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (property != null && _bs.getValue(property) instanceof Direction _dir)
-						return _dir;
-					else if (_bs.hasProperty(BlockStateProperties.AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-					else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-						return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-					return Direction.NORTH;
-				}
-			}.getDirection(BlockPos.containing(x, y, z))))).getBlock() == (new Object() {
-				public BlockState with(BlockState _bs, Direction newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
-					if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
-						return _bs.setValue(_dp, newValue);
-					_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
-					return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
-				}
-			}.with(UltadModBlocks.OAK_ALT_SLAB.get().defaultBlockState(), Direction.EAST)).getBlock()) {
-				{
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockState _bs = Blocks.AIR.defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
-							}
+					{
+						BlockPos _bp = BlockPos.containing(x, y, z - 1);
+						BlockState _bs = Blocks.OAK_PLANKS.defaultBlockState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+							if (_property != null && _bs.getValue(_property) != null)
+								try {
+									_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+								} catch (Exception e) {
+								}
+						}
+						world.setBlock(_bp, _bs, 3);
 					}
-					world.setBlock(_bp, _bs, 3);
-				}
-				{
-					BlockPos _bp = BlockPos.containing(x - 1, y, z);
-					BlockState _bs = Blocks.OAK_PLANKS.defaultBlockState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.getValue(_property) != null)
-							try {
-								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
+				} else {
+					if ((new Object() {
+						public BlockState with(BlockState _bs, Direction newValue) {
+							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+							if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
+								return _bs.setValue(_dp, newValue);
+							_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+							return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
+						}
+					}.with((world.getBlockState(BlockPos.containing(x + 1, y, z))), (new Object() {
+						public Direction getDirection(BlockPos pos) {
+							BlockState _bs = world.getBlockState(pos);
+							Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+							if (property != null && _bs.getValue(property) instanceof Direction _dir)
+								return _dir;
+							else if (_bs.hasProperty(BlockStateProperties.AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+							else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+							return Direction.NORTH;
+						}
+					}.getDirection(BlockPos.containing(x, y, z))))).getBlock() == (new Object() {
+						public BlockState with(BlockState _bs, Direction newValue) {
+							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+							if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
+								return _bs.setValue(_dp, newValue);
+							_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+							return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
+						}
+					}.with(UltadModBlocks.OAK_ALT_SLAB.get().defaultBlockState(), Direction.WEST)).getBlock()) {
+						{
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockState _bs = Blocks.AIR.defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+								if (_property != null && _bs.getValue(_property) != null)
+									try {
+										_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+									} catch (Exception e) {
+									}
 							}
+							world.setBlock(_bp, _bs, 3);
+						}
+						{
+							BlockPos _bp = BlockPos.containing(x + 1, y, z);
+							BlockState _bs = Blocks.OAK_PLANKS.defaultBlockState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+								if (_property != null && _bs.getValue(_property) != null)
+									try {
+										_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+									} catch (Exception e) {
+									}
+							}
+							world.setBlock(_bp, _bs, 3);
+						}
+					} else {
+						if ((new Object() {
+							public BlockState with(BlockState _bs, Direction newValue) {
+								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+								if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
+									return _bs.setValue(_dp, newValue);
+								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
+							}
+						}.with((world.getBlockState(BlockPos.containing(x - 1, y, z))), (new Object() {
+							public Direction getDirection(BlockPos pos) {
+								BlockState _bs = world.getBlockState(pos);
+								Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+								if (property != null && _bs.getValue(property) instanceof Direction _dir)
+									return _dir;
+								else if (_bs.hasProperty(BlockStateProperties.AXIS))
+									return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+								else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+									return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+								return Direction.NORTH;
+							}
+						}.getDirection(BlockPos.containing(x, y, z))))).getBlock() == (new Object() {
+							public BlockState with(BlockState _bs, Direction newValue) {
+								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+								if (_prop instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(newValue))
+									return _bs.setValue(_dp, newValue);
+								_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+								return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().contains(newValue.getAxis()) ? _bs.setValue(_ep, newValue.getAxis()) : _bs;
+							}
+						}.with(UltadModBlocks.OAK_ALT_SLAB.get().defaultBlockState(), Direction.EAST)).getBlock()) {
+							{
+								BlockPos _bp = BlockPos.containing(x, y, z);
+								BlockState _bs = Blocks.AIR.defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+									if (_property != null && _bs.getValue(_property) != null)
+										try {
+											_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+										} catch (Exception e) {
+										}
+								}
+								world.setBlock(_bp, _bs, 3);
+							}
+							{
+								BlockPos _bp = BlockPos.containing(x - 1, y, z);
+								BlockState _bs = Blocks.OAK_PLANKS.defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+									if (_property != null && _bs.getValue(_property) != null)
+										try {
+											_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+										} catch (Exception e) {
+										}
+								}
+								world.setBlock(_bp, _bs, 3);
+							}
+						}
 					}
-					world.setBlock(_bp, _bs, 3);
 				}
 			}
 		}
