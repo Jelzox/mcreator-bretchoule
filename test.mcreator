@@ -685,21 +685,6 @@
         ]
       },
       "path": "~/Slabs Overhaul/Dirt"
-    },
-    {
-      "name": "DirtBiome",
-      "type": "procedure",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_biome",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/procedures/DirtBiomeProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Slabs Overhaul/Dirt"
     }
   ],
   "variable_elements": [],
