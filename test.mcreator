@@ -1,10 +1,23 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Hallo",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hallo",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item_group.test.hallo": "Hallo"
+    }
   },
   "foldersRoot": {
     "name": "~",
