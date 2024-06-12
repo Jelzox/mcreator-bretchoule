@@ -3,16 +3,24 @@ package net.mcreator.test.procedures;
 import net.minecraftforge.eventbus.api.Event;
 
 public class ProcedurCommandProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z + 1);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("part", "head");
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			((Slot) _slots.get(1)).remove(1);
+			_player.containerMenu.broadcastChanges();
 		}
-		world.setBlock(BlockPos.containing(x, y, z + 1), Blocks.WHITE_BED.defaultBlockState(), 3);
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			ItemStack _setstack = new ItemStack(Blocks.ICE).copy();
+			_setstack.setCount(1);
+			((Slot) _slots.get(2)).set(_setstack);
+			_player.containerMenu.broadcastChanges();
+		}
+		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+			ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
+			_setstack.setCount(1);
+			((Slot) _slots.get(3)).set(_setstack);
+			_player.containerMenu.broadcastChanges();
+		}
 	}
 }

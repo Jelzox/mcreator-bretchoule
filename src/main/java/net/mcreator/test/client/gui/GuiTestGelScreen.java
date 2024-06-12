@@ -68,6 +68,10 @@ public class GuiTestGelScreen extends AbstractContainerScreen<GuiTestGelMenu> {
 		super.init();
 
 		button_convertir_en_glace = Button.builder(Component.translatable("gui.test.gui_test_gel.button_convertir_en_glace"), e -> {
+			if (true) {
+				TestMod.PACKET_HANDLER.sendToServer(new GuiTestGelButtonMessage(0, x, y, z));
+				GuiTestGelButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 23, this.topPos + 48, 119, 20).build();
 
 		guistate.put("button:button_convertir_en_glace", button_convertir_en_glace);

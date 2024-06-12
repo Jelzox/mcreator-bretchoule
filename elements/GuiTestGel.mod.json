@@ -46,6 +46,9 @@
           "name": "button_convertir_en_glace",
           "text": "Convertir en glace",
           "isUndecorated": false,
+          "onClick": {
+            "name": "ProcedurCommand"
+          },
           "width": 119,
           "height": 20,
           "x": 149,
