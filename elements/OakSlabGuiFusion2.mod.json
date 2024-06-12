@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.WOODEN_SLAB#0"
+      "value": "Blocks.PLANKS#0"
     },
     "name": "oak_slab_gui_fusion_2",
     "namespace": "mod"
