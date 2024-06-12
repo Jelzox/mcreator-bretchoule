@@ -705,6 +705,38 @@
         ]
       },
       "path": "~/Slabs Overhaul/Grass"
+    },
+    {
+      "name": "DirtBiome",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_biome",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/procedures/DirtBiomeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Slabs Overhaul/Dirt"
     }
   ],
   "variable_elements": [],
