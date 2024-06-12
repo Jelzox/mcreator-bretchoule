@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "test:dirt_slab",
     "test:grass_slab"
   ]
 }
