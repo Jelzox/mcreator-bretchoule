@@ -5,7 +5,7 @@
         "up": "true"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce_post"
+        "model": "test:block/dark_oak_wall_post"
       }
     },
     {
@@ -13,7 +13,7 @@
         "north": "low"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce",
+        "model": "test:block/dark_oak_wall",
         "uvlock": true
       }
     },
@@ -22,7 +22,7 @@
         "east": "low"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce",
+        "model": "test:block/dark_oak_wall",
         "y": 90,
         "uvlock": true
       }
@@ -32,7 +32,7 @@
         "south": "low"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce",
+        "model": "test:block/dark_oak_wall",
         "y": 180,
         "uvlock": true
       }
@@ -42,7 +42,7 @@
         "west": "low"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce",
+        "model": "test:block/dark_oak_wall",
         "y": 270,
         "uvlock": true
       }
@@ -52,7 +52,7 @@
         "north": "tall"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce_side_tall",
+        "model": "test:block/dark_oak_wall_side_tall",
         "uvlock": true
       }
     },
@@ -61,7 +61,7 @@
         "east": "tall"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce_side_tall",
+        "model": "test:block/dark_oak_wall_side_tall",
         "y": 90,
         "uvlock": true
       }
@@ -71,7 +71,7 @@
         "south": "tall"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce_side_tall",
+        "model": "test:block/dark_oak_wall_side_tall",
         "y": 180,
         "uvlock": true
       }
@@ -81,7 +81,7 @@
         "west": "tall"
       },
       "apply": {
-        "model": "test:block/dark_oak_spruce_side_tall",
+        "model": "test:block/dark_oak_wall_side_tall",
         "y": 270,
         "uvlock": true
       }

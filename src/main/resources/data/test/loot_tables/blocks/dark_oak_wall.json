@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "test:blocks/dark_oak_spruce",
+  "random_sequence": "test:blocks/dark_oak_wall",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "test:dark_oak_spruce"
+          "name": "test:dark_oak_wall"
         }
       ]
     }

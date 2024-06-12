@@ -554,30 +554,6 @@
       "path": "~/Wall"
     },
     {
-      "name": "DarkOakSpruce",
-      "type": "block",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_oak_spruce",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/test/models/block/dark_oak_spruce_inventory.json",
-          "src/main/resources/assets/test/models/item/dark_oak_spruce.json",
-          "src/main/resources/assets/test/models/block/dark_oak_spruce.json",
-          "src/main/resources/assets/test/models/block/dark_oak_spruce_side_tall.json",
-          "src/main/resources/assets/test/blockstates/dark_oak_spruce.json",
-          "src/main/java/net/mcreator/test/block/DarkOakSpruceBlock.java",
-          "src/main/resources/data/test/forge/biome_modifier/dark_oak_spruce_biome_modifier.json",
-          "src/main/resources/data/test/loot_tables/blocks/dark_oak_spruce.json",
-          "src/main/resources/data/test/worldgen/placed_feature/dark_oak_spruce.json",
-          "src/main/resources/assets/test/models/block/dark_oak_spruce_post.json",
-          "src/main/resources/data/test/worldgen/configured_feature/dark_oak_spruce.json"
-        ]
-      },
-      "path": "~/Wall"
-    },
-    {
       "name": "AcaciaWall",
       "type": "block",
       "sortid": 62,
@@ -716,10 +692,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
           }
         ]
       },
@@ -734,9 +706,9 @@
       "registry_name": "gui_test_gel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/test/world/inventory/GuiTestGelMenu.java",
           "src/main/java/net/mcreator/test/network/GuiTestGelButtonMessage.java",
-          "src/main/java/net/mcreator/test/client/gui/GuiTestGelScreen.java"
+          "src/main/java/net/mcreator/test/client/gui/GuiTestGelScreen.java",
+          "src/main/java/net/mcreator/test/world/inventory/GuiTestGelMenu.java"
         ]
       },
       "path": "~/Test Zone"
@@ -758,6 +730,27 @@
         ]
       },
       "path": "~/Slabs Overhaul/Grass"
+    },
+    {
+      "name": "DarkOakWall",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/block/dark_oak_wall.json",
+          "src/main/resources/assets/test/models/item/dark_oak_wall.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_side_tall.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_inventory.json",
+          "src/main/resources/data/test/loot_tables/blocks/dark_oak_wall.json",
+          "src/main/java/net/mcreator/test/block/DarkOakWallBlock.java",
+          "src/main/resources/assets/test/blockstates/dark_oak_wall.json",
+          "src/main/resources/assets/test/models/block/dark_oak_wall_post.json"
+        ]
+      },
+      "path": "~/Wall"
     }
   ],
   "variable_elements": [],
@@ -767,6 +760,7 @@
       "~CUSTOM:GrassSlab"
     ],
     "BLOCKS:minecraft:walls": [
+      "~CUSTOM:DarkOakWall",
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
       "~CUSTOM:AcaciaWall",
@@ -780,6 +774,7 @@
       "~CUSTOM:DirtSlab"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:DarkOakWall",
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
       "~CUSTOM:AcaciaWall",
@@ -799,13 +794,12 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_secret_door": "Secret Oak Door",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_alt_slab": "Oak Vertical Slab",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_secret_door": "Secret Oak Door",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "gui.test.gui_test_gel.Glacon2": "Glacon2",
-      "block.test.dark_oak_spruce": "Dark Oak Wall",
       "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "item_group.ultad.test": "VerticalSlabs",

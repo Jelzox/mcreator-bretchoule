@@ -34,7 +34,7 @@
         "subtract": false
       }
     ],
-    "name": "Acacia Wall",
+    "name": "Crimson Wall",
     "specialInformation": {
       "fixedValue": []
     },
@@ -72,7 +72,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "RAIL",
-    "flammability": 0,
+    "flammability": 20,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -101,7 +101,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -120,13 +120,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "generateFeature": true,
+    "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
-    ],
+    "blocksToReplace": [],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
