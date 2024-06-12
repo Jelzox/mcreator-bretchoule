@@ -1,0 +1,11 @@
+{
+  "_fv": 60,
+  "_type": "tab",
+  "definition": {
+    "name": "Test",
+    "icon": {
+      "value": "Blocks.CANDLE_CAKE#11"
+    },
+    "showSearch": false
+  }
+}
