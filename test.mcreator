@@ -710,6 +710,19 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:WarpedWall",
+      "~CUSTOM:CrimsonWall",
+      "~CUSTOM:AcaciaWall",
+      "~CUSTOM:DarkOakSpruce",
+      "~CUSTOM:SpruceWall",
+      "~CUSTOM:JungleWall",
+      "~CUSTOM:BirchWall",
+      "~CUSTOM:OakWall"
+    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:GrassSlab",
       "~CUSTOM:DirtSlab"
@@ -727,19 +740,6 @@
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
-    ],
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:WarpedWall",
-      "~CUSTOM:CrimsonWall",
-      "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
-      "~CUSTOM:SpruceWall",
-      "~CUSTOM:JungleWall",
-      "~CUSTOM:BirchWall",
-      "~CUSTOM:OakWall"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
     ]
   },
   "language_map": {
@@ -747,9 +747,9 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_alt_slab": "Oak Vertical Slab",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_secret_door": "Secret Oak Door",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_alt_slab": "Oak Vertical Slab",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.dark_oak_spruce": "Dark Oak Wall",
