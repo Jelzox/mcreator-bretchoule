@@ -431,6 +431,20 @@
         ]
       },
       "path": "~/Slabs Overhaul"
+    },
+    {
+      "name": "BirchVerticalCraft",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_vertical_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test/recipes/birch_vertical_craft.json"
+        ]
+      },
+      "path": "~/Slabs Overhaul"
     }
   ],
   "variable_elements": [],
