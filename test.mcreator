@@ -687,28 +687,10 @@
       "path": "~/Slabs Overhaul/Dirt"
     },
     {
-      "name": "GrassTestBlockM",
-      "type": "block",
-      "sortid": 67,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "grass_test_block_m",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/block/GrassTestBlockMBlock.java",
-          "src/main/resources/assets/test/blockstates/grass_test_block_m.json",
-          "src/main/resources/data/test/loot_tables/blocks/grass_test_block_m.json",
-          "src/main/resources/assets/test/models/block/grass_test_block_m.json",
-          "src/main/resources/assets/test/models/item/grass_test_block_m.json"
-        ]
-      },
-      "path": "~/Test Zone"
-    },
-    {
       "name": "ExpeditionBlock",
       "type": "block",
       "sortid": 68,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "expedition_block",
       "metadata": {
@@ -758,7 +740,7 @@
       "name": "GuiTestGel",
       "type": "gui",
       "sortid": 71,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "gui_test_gel",
       "metadata": {
