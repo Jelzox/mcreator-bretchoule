@@ -19,5 +19,6 @@
   "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
   "block.ultad.glass_door": "Test Glass Door",
   "block.test.oak_secret_trapdoor": "Secret Oak Trap",
+  "block.test.oak_wall": "Oak Wall",
   "advancements.secret_avancement.title": "Secret Avancement"
 }

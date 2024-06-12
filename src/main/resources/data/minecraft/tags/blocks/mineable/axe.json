@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "test:oak_wall",
     "test:birch_alt_slab",
     "test:oak_alt_slab",
     "test:oak_secret_trapdoor",

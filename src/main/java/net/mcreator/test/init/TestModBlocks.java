@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.test.block.OakWallBlock;
 import net.mcreator.test.block.OakSecretTrapdoorBlock;
 import net.mcreator.test.block.OakSecretDoorBlock;
 import net.mcreator.test.block.OakAltSlabBlock;
@@ -26,6 +27,7 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> OAK_SECRET_DOOR = REGISTRY.register("oak_secret_door", () -> new OakSecretDoorBlock());
 	public static final RegistryObject<Block> OAK_SECRET_TRAPDOOR = REGISTRY.register("oak_secret_trapdoor", () -> new OakSecretTrapdoorBlock());
 	public static final RegistryObject<Block> BIRCH_ALT_SLAB = REGISTRY.register("birch_alt_slab", () -> new BirchAltSlabBlock());
+	public static final RegistryObject<Block> OAK_WALL = REGISTRY.register("oak_wall", () -> new OakWallBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

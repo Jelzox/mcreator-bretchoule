@@ -23,6 +23,7 @@ public class TestModItems {
 	public static final RegistryObject<Item> OAK_SECRET_DOOR = doubleBlock(TestModBlocks.OAK_SECRET_DOOR);
 	public static final RegistryObject<Item> OAK_SECRET_TRAPDOOR = block(TestModBlocks.OAK_SECRET_TRAPDOOR);
 	public static final RegistryObject<Item> BIRCH_ALT_SLAB = block(TestModBlocks.BIRCH_ALT_SLAB);
+	public static final RegistryObject<Item> OAK_WALL = block(TestModBlocks.OAK_WALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items

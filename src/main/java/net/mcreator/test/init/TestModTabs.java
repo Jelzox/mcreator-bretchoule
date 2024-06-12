@@ -27,6 +27,7 @@ public class TestModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.test.vertical_slabs")).icon(() -> new ItemStack(TestModBlocks.OAK_ALT_SLAB.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TestModBlocks.OAK_ALT_SLAB.get().asItem());
 				tabData.accept(TestModBlocks.BIRCH_ALT_SLAB.get().asItem());
+				tabData.accept(TestModBlocks.OAK_WALL.get().asItem());
 			})
 
 					.build());
