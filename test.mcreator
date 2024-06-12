@@ -469,14 +469,17 @@
       "registry_name": "oak_wall",
       "metadata": {
         "files": [
-          "src/main/resources/assets/test/models/item/oak_wall.json",
-          "src/main/resources/assets/test/models/block/oak_wall_inventory.json",
           "src/main/java/net/mcreator/test/block/OakWallBlock.java",
-          "src/main/resources/data/test/loot_tables/blocks/oak_wall.json",
-          "src/main/resources/assets/test/models/block/oak_wall_post.json",
           "src/main/resources/assets/test/models/block/oak_wall_side_tall.json",
+          "src/main/resources/data/test/worldgen/placed_feature/oak_wall.json",
+          "src/main/resources/assets/test/models/block/oak_wall_post.json",
+          "src/main/resources/data/test/worldgen/configured_feature/oak_wall.json",
+          "src/main/resources/data/test/forge/biome_modifier/oak_wall_biome_modifier.json",
+          "src/main/resources/data/test/loot_tables/blocks/oak_wall.json",
+          "src/main/resources/assets/test/models/block/oak_wall.json",
           "src/main/resources/assets/test/blockstates/oak_wall.json",
-          "src/main/resources/assets/test/models/block/oak_wall.json"
+          "src/main/resources/assets/test/models/item/oak_wall.json",
+          "src/main/resources/assets/test/models/block/oak_wall_inventory.json"
         ]
       },
       "path": "~/Wall"
@@ -485,15 +488,15 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:walls": [
-      "~CUSTOM:OakWall"
-    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:OakWall",
       "~CUSTOM:BirchAltSlab",
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:OakWall"
     ]
   },
   "language_map": {
