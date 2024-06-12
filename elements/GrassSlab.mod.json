@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "dirt",
-    "textureTop": "",
+    "textureTop": "grass_block_top",
     "textureLeft": "",
     "textureFront": "grass_block_side",
     "textureRight": "",
