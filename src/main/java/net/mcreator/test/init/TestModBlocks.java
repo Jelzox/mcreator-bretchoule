@@ -7,6 +7,10 @@ package net.mcreator.test.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -17,6 +21,7 @@ import net.mcreator.test.block.OakSecretTrapdoorBlock;
 import net.mcreator.test.block.OakSecretDoorBlock;
 import net.mcreator.test.block.OakAltSlabBlock;
 import net.mcreator.test.block.JungleWallBlock;
+import net.mcreator.test.block.GrassSlabBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
 import net.mcreator.test.block.GlassDoorBlock;
 import net.mcreator.test.block.DirtSlabBlock;
@@ -44,6 +49,20 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> CRIMSON_WALL = REGISTRY.register("crimson_wall", () -> new CrimsonWallBlock());
 	public static final RegistryObject<Block> WARPED_WALL = REGISTRY.register("warped_wall", () -> new WarpedWallBlock());
 	public static final RegistryObject<Block> DIRT_SLAB = REGISTRY.register("dirt_slab", () -> new DirtSlabBlock());
+	public static final RegistryObject<Block> GRASS_SLAB = REGISTRY.register("grass_slab", () -> new GrassSlabBlock());
+
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			GrassSlabBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+			GrassSlabBlock.itemColorLoad(event);
+		}
+	}
 }
