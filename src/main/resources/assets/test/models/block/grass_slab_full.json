@@ -3,7 +3,7 @@
   "textures": {
     "bottom": "test:block/dirt",
     "top": "test:block/grass_block_top",
-    "side": "test:block/grass_block_side"
+    "side": "test:block/grass_overlay_side"
   },
   "render_type": "solid"
 }
