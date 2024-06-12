@@ -703,38 +703,6 @@
         ]
       },
       "path": "~/Slabs Overhaul/Grass"
-    },
-    {
-      "name": "DirtBiome",
-      "type": "procedure",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_biome",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/procedures/DirtBiomeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Slabs Overhaul/Dirt"
     }
   ],
   "variable_elements": [],
@@ -756,7 +724,6 @@
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:DirtSlab"
     ],
-    "BLOCKS:minecraft:logs": [],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
@@ -770,11 +737,7 @@
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
-    ],
-    "BLOCKS:minecraft:dirt": [
-      "CUSTOM:GrassSlab"
-    ],
-    "BIOMES:minecraft:is_overworld": []
+    ]
   },
   "language_map": {
     "en_us": {
@@ -826,15 +789,15 @@
         "name": "Slabs Overhaul",
         "children": [
           {
+            "name": "Grass",
+            "children": []
+          },
+          {
             "name": "Dirt",
             "children": []
           },
           {
             "name": "OakVerticalSlab",
-            "children": []
-          },
-          {
-            "name": "Grass",
             "children": []
           }
         ]

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "dirt",
+        "1": "grass_overlay_side",
+        "2": "grass_block_top"
+      },
+      "name": "default"
+    }
+  }
+}
