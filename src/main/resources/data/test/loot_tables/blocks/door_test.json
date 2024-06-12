@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "test:blocks/door_test",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "test:door_test",
+          "conditions": [
+            {
+              "block": "test:door_test",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
