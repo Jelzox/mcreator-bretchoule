@@ -685,65 +685,12 @@
         ]
       },
       "path": "~/Slabs Overhaul/Dirt"
-    },
-    {
-      "name": "GrassSlab",
-      "type": "block",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_slab",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/loot_tables/blocks/grass_slab.json",
-          "src/main/resources/assets/test/models/block/grass_slab_full.json",
-          "src/main/resources/assets/test/models/block/grass_slab.json",
-          "src/main/java/net/mcreator/test/block/GrassSlabBlock.java",
-          "src/main/resources/assets/test/models/block/grass_slab_top.json",
-          "src/main/resources/assets/test/models/item/grass_slab.json",
-          "src/main/resources/assets/test/blockstates/grass_slab.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul/Grass"
-    },
-    {
-      "name": "DirtBiome",
-      "type": "procedure",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_biome",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/procedures/DirtBiomeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Slabs Overhaul/Dirt"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:GrassSlab",
       "~CUSTOM:DirtSlab"
     ],
     "BLOCKS:minecraft:mineable/axe": [
@@ -759,9 +706,6 @@
       "~CUSTOM:OakAltSlab",
       "~CUSTOM:OakSecretTrapdoor",
       "~CUSTOM:OakSecretDoor"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
     ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:WarpedWall",
@@ -779,9 +723,9 @@
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
       "item_group.test.secret_entrances": "Secret Entrances",
-      "block.test.oak_secret_door": "Secret Oak Door",
-      "item_group.test.test": "VerticalSlabs",
       "block.test.oak_alt_slab": "Oak Vertical Slab",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_secret_door": "Secret Oak Door",
       "block.test.glass_door": "Glass Door",
       "block.ultad.secret_oak_door": "Secret Oak Door",
       "block.test.dark_oak_spruce": "Dark Oak Wall",
@@ -802,7 +746,6 @@
       "advancements.i_see_you.descr": "The player place a glass door",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
       "block.test.oak_secret_trapdoor": "Secret Oak Trap",
-      "block.test.grass_slab": "Grass Slab",
       "block.test.oak_wall": "Oak Wall",
       "advancements.secret_avancement.title": "Secret Avancement",
       "block.test.jungle_wall": "Jungle Wall",

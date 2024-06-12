@@ -1,9 +1,0 @@
-{
-  "parent": "block/cube_bottom_top",
-  "textures": {
-    "bottom": "test:block/dirt",
-    "top": "test:block/grass_block_top",
-    "side": "test:block/grass_overlay_side"
-  },
-  "render_type": "cutout_mipped"
-}
