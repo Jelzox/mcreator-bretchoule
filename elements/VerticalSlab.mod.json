@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "model:default",
+    "customModelName": "vslab:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -26,10 +26,10 @@
       {
         "mx": 0.0,
         "my": 0.0,
-        "mz": 0.0,
+        "mz": 8.0,
         "Mx": 16.0,
         "My": 16.0,
-        "Mz": 8.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],

@@ -52,10 +52,10 @@ public class VerticalSlabBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 8, 16, 16, 16);
-			case NORTH -> box(0, 0, 0, 16, 16, 8);
-			case EAST -> box(8, 0, 0, 16, 16, 16);
-			case WEST -> box(0, 0, 0, 8, 16, 16);
+			default -> box(0, 0, 0, 16, 16, 8);
+			case NORTH -> box(0, 0, 8, 16, 16, 16);
+			case EAST -> box(0, 0, 0, 8, 16, 16);
+			case WEST -> box(8, 0, 0, 16, 16, 16);
 		};
 	}
 
