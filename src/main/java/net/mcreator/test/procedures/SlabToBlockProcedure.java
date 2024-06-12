@@ -49,7 +49,7 @@ public class SlabToBlockProcedure {
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == TestModBlocks.VERTICAL_SLAB.get()) {
 			{
-				BlockPos _bp = BlockPos.containing(x, y, z + 1);
+				BlockPos _bp = BlockPos.containing(x, y, z - 1);
 				BlockState _bs = Blocks.AIR.defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
