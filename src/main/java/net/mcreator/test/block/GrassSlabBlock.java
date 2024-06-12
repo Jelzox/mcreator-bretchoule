@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class GrassSlabBlock extends SlabBlock {
 	public GrassSlabBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).dynamicShape());
+		super(BlockBehaviour.Properties.of().sound(SoundType.WET_GRASS).strength(1f, 10f).dynamicShape());
 	}
 
 	@Override
