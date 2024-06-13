@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "result": {
+    "item": "test:grass_slab",
+    "count": 2
+  }
+}
