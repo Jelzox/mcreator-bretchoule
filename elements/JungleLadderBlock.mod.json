@@ -2,21 +2,20 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "spruce_planks",
+    "texture": "jungle_log",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
-    "rotationMode": 0,
+    "renderType": 2,
+    "customModelName": "jungle_ladder_-_copie:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Wall",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -25,25 +24,70 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 14.0,
         "my": 0.0,
-        "mz": 0.0,
+        "mz": 13.0,
         "Mx": 16.0,
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 13.0,
+        "Mx": 2.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 2.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 4.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 6.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 12.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 14.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 8.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 10.0,
+        "Mz": 15.0,
+        "subtract": false
       }
     ],
-    "name": "Spruce Wall",
+    "name": "Jungle Ladder Block",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:MoreWall"
+      "value": "CUSTOM:VerticalSlabs"
     },
     "destroyTool": "axe",
     "customDrop": {
@@ -66,15 +110,15 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "WOOD",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "RAIL",
-    "flammability": 20,
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
     "fireSpreadSpeed": 0,
-    "isLadder": false,
+    "isLadder": true,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
@@ -101,7 +145,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -122,11 +166,15 @@
     "fluidRestrictions": [],
     "generateFeature": false,
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 200
+    "maxGenerateHeight": 64
   }
 }

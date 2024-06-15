@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 8,
+    "recipeRetstackSize": 4,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -21,13 +21,13 @@
         "value": "Items.STICK"
       },
       {
-        "value": "Blocks.LOG"
+        "value": "Blocks.LOG#0"
       },
       {
-        "value": "Blocks.LOG"
+        "value": "Blocks.LOG#0"
       },
       {
-        "value": "Blocks.LOG"
+        "value": "Blocks.LOG#0"
       },
       {
         "value": "Items.STICK"

@@ -17,14 +17,9 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ambient.Bat;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -32,7 +27,6 @@ import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.damagesource.DamageSource;
@@ -48,7 +42,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.test.init.TestModEntities;
 
-public class FlyAnimationEntity extends Monster implements GeoEntity {
+public class FlyAnimationEntity extends Bat implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(FlyAnimationEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(FlyAnimationEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(FlyAnimationEntity.class, EntityDataSerializers.STRING);
@@ -99,16 +93,7 @@ public class FlyAnimationEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-			@Override
-			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
-			}
-		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new FloatGoal(this));
+
 	}
 
 	@Override
@@ -164,8 +149,10 @@ public class FlyAnimationEntity extends Monster implements GeoEntity {
 		super.setNoGravity(true);
 	}
 
+	@Override
 	public void aiStep() {
 		super.aiStep();
+		this.updateSwingTime();
 		this.setNoGravity(true);
 	}
 

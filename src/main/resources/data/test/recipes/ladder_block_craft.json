@@ -11,11 +11,11 @@
       "item": "minecraft:stick"
     },
     "b": {
-      "tag": "minecraft:logs"
+      "item": "minecraft:oak_log"
     }
   },
   "result": {
     "item": "test:ladder_block",
-    "count": 8
+    "count": 4
   }
 }

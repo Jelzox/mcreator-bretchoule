@@ -1,0 +1,9 @@
+{
+  "parent": "test:custom/jungle_ladder_-_copie",
+  "textures": {
+    "all": "test:block/jungle_log",
+    "particle": "test:block/jungle_log",
+    "0": "test:block/jungle_log"
+  },
+  "render_type": "solid"
+}

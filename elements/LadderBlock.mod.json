@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "ladder_block_-_converted:default",
-    "rotationMode": 3,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -78,7 +78,7 @@
         "subtract": false
       }
     ],
-    "name": "Ladder Block",
+    "name": "Oak Ladder Block",
     "specialInformation": {
       "fixedValue": []
     },

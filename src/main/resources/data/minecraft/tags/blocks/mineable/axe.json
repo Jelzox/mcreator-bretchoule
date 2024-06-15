@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "test:jungle_ladder_block",
+    "test:spruce_ladder_block",
+    "test:birch_ladder_block",
     "test:ladder_block",
     "test:block_of_stick",
     "test:simple_stick",

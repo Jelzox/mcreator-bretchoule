@@ -1187,6 +1187,84 @@
         ]
       },
       "path": "~/Test Zone"
+    },
+    {
+      "name": "BirchLadderBlock",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_ladder_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/block/birch_ladder_block.json",
+          "src/main/java/net/mcreator/test/block/BirchLadderBlockBlock.java",
+          "src/main/resources/assets/test/models/item/birch_ladder_block.json",
+          "src/main/resources/data/test/loot_tables/blocks/birch_ladder_block.json",
+          "src/main/resources/assets/test/blockstates/birch_ladder_block.json"
+        ]
+      },
+      "path": "~/Deco And Util/Ladder"
+    },
+    {
+      "name": "MoreWall",
+      "type": "tab",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "more_wall",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Wall"
+    },
+    {
+      "name": "Utilanddecocreativetab",
+      "type": "tab",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "utilanddecocreativetab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Deco And Util/Ladder"
+    },
+    {
+      "name": "SpruceLadderBlock",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_ladder_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/test/block/SpruceLadderBlockBlock.java",
+          "src/main/resources/assets/test/blockstates/spruce_ladder_block.json",
+          "src/main/resources/data/test/loot_tables/blocks/spruce_ladder_block.json",
+          "src/main/resources/assets/test/models/block/spruce_ladder_block.json",
+          "src/main/resources/assets/test/models/item/spruce_ladder_block.json"
+        ]
+      },
+      "path": "~/Deco And Util/Ladder"
+    },
+    {
+      "name": "JungleLadderBlock",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_ladder_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test/models/item/jungle_ladder_block.json",
+          "src/main/resources/assets/test/models/block/jungle_ladder_block.json",
+          "src/main/java/net/mcreator/test/block/JungleLadderBlockBlock.java",
+          "src/main/resources/assets/test/blockstates/jungle_ladder_block.json",
+          "src/main/resources/data/test/loot_tables/blocks/jungle_ladder_block.json"
+        ]
+      },
+      "path": "~/Deco And Util/Ladder"
     }
   ],
   "variable_elements": [],
@@ -1210,6 +1288,9 @@
       "~CUSTOM:DirtSlab"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:JungleLadderBlock",
+      "~CUSTOM:SpruceLadderBlock",
+      "~CUSTOM:BirchLadderBlock",
       "~CUSTOM:LadderBlock",
       "~CUSTOM:BlockOfStick",
       "~CUSTOM:SimpleStick",
@@ -1238,15 +1319,19 @@
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
       "block.test.dark_oak_wall": "Dark Oak Wall",
       "block.ultad.glass_door": "Test Glass Door",
-      "block.test.ladder_block": "Ladder Block",
+      "block.test.ladder_block": "Oak Ladder Block",
+      "item_group.test.utilanddecocreativetab": "Utilanddecocreativetab",
       "block.test.crimson_wall": "Crimson Wall",
+      "block.test.birch_ladder_block": "Birch Ladder Block",
       "block.test.warped_wall": "Warped Wall",
       "block.test.block_of_stick": "Block Of Stick",
       "advancements.secret_avancement.descr": "The player opened a secret door",
       "advancements.i_see_you.descr": "The player place a glass door",
+      "block.test.spruce_ladder_block": "Spruce Ladder Block",
       "block.test.grass_slab": "Grass Slab",
       "block.test.oak_wall": "Oak Wall",
       "gui.test.fletching_table_gui.button_uncraft_arrow": "Uncraft Arrow",
+      "item_group.test.more_wall": "More Wall",
       "item_group.test.secret_entrances": "Secret Entrances",
       "block.test.small_pile_of_stick": "Small Pile Of Stick",
       "item_group.test.test": "VerticalSlabs",
@@ -1259,6 +1344,7 @@
       "item_group.ultad.test": "VerticalSlabs",
       "block.test.simple_stick": "Simple Stick",
       "block.test.normal_pile_of_stick": "Small Pile Of Stick",
+      "block.test.jungle_ladder_block": "Jungle Ladder Block",
       "block.test.glass_trapdoor": "Test Glass Door",
       "item_group.ultad.secret_entrances": "Secret Entrances",
       "item_group.test.vertical_slabs": "Vertical Slabs",
@@ -1322,6 +1408,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Mobs",
+        "children": []
       }
     ]
   },

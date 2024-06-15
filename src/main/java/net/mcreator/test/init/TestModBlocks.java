@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.test.block.WarpedWallBlock;
 import net.mcreator.test.block.SpruceWallBlock;
+import net.mcreator.test.block.SpruceLadderBlockBlock;
 import net.mcreator.test.block.SmallPileOfStickBlock;
 import net.mcreator.test.block.SimpleStickBlock;
 import net.mcreator.test.block.OakWallBlock;
@@ -25,6 +26,7 @@ import net.mcreator.test.block.OakAltSlabBlock;
 import net.mcreator.test.block.NormalPileOfStickBlock;
 import net.mcreator.test.block.LadderBlockBlock;
 import net.mcreator.test.block.JungleWallBlock;
+import net.mcreator.test.block.JungleLadderBlockBlock;
 import net.mcreator.test.block.GrassSlabBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
 import net.mcreator.test.block.GlassDoorBlock;
@@ -34,6 +36,7 @@ import net.mcreator.test.block.DarkOakWallBlock;
 import net.mcreator.test.block.CrimsonWallBlock;
 import net.mcreator.test.block.BlockOfStickBlock;
 import net.mcreator.test.block.BirchWallBlock;
+import net.mcreator.test.block.BirchLadderBlockBlock;
 import net.mcreator.test.block.BirchAltSlabBlock;
 import net.mcreator.test.block.BigPileOfStickBlock;
 import net.mcreator.test.block.AcaciaWallBlock;
@@ -64,6 +67,9 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> SIMPLE_STICK = REGISTRY.register("simple_stick", () -> new SimpleStickBlock());
 	public static final RegistryObject<Block> BLOCK_OF_STICK = REGISTRY.register("block_of_stick", () -> new BlockOfStickBlock());
 	public static final RegistryObject<Block> LADDER_BLOCK = REGISTRY.register("ladder_block", () -> new LadderBlockBlock());
+	public static final RegistryObject<Block> BIRCH_LADDER_BLOCK = REGISTRY.register("birch_ladder_block", () -> new BirchLadderBlockBlock());
+	public static final RegistryObject<Block> SPRUCE_LADDER_BLOCK = REGISTRY.register("spruce_ladder_block", () -> new SpruceLadderBlockBlock());
+	public static final RegistryObject<Block> JUNGLE_LADDER_BLOCK = REGISTRY.register("jungle_ladder_block", () -> new JungleLadderBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

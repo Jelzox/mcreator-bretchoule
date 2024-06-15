@@ -28,11 +28,11 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class LadderBlockBlock extends Block implements SimpleWaterloggedBlock {
+public class BirchLadderBlockBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public LadderBlockBlock() {
+	public BirchLadderBlockBlock() {
 		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}

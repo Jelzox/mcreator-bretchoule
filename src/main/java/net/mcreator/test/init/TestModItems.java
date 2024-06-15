@@ -42,6 +42,9 @@ public class TestModItems {
 	public static final RegistryObject<Item> BLOCK_OF_STICK = block(TestModBlocks.BLOCK_OF_STICK);
 	public static final RegistryObject<Item> LADDER_BLOCK = block(TestModBlocks.LADDER_BLOCK);
 	public static final RegistryObject<Item> FLY_ANIMATION_SPAWN_EGG = REGISTRY.register("fly_animation_spawn_egg", () -> new ForgeSpawnEggItem(TestModEntities.FLY_ANIMATION, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> BIRCH_LADDER_BLOCK = block(TestModBlocks.BIRCH_LADDER_BLOCK);
+	public static final RegistryObject<Item> SPRUCE_LADDER_BLOCK = block(TestModBlocks.SPRUCE_LADDER_BLOCK);
+	public static final RegistryObject<Item> JUNGLE_LADDER_BLOCK = block(TestModBlocks.JUNGLE_LADDER_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items
