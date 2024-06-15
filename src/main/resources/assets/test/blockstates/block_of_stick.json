@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "test:block/block_of_stick"
+    },
+    "facing=east": {
+      "model": "test:block/block_of_stick",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "test:block/block_of_stick",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "test:block/block_of_stick",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "test:block/block_of_stick",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "test:block/block_of_stick",
+      "x": 90
+    }
+  }
+}

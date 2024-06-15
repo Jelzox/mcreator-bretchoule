@@ -34,6 +34,11 @@ public class TestModItems {
 	public static final RegistryObject<Item> EXPEDITION_BLOCK = block(TestModBlocks.EXPEDITION_BLOCK);
 	public static final RegistryObject<Item> GRASS_SLAB = block(TestModBlocks.GRASS_SLAB);
 	public static final RegistryObject<Item> DARK_OAK_WALL = block(TestModBlocks.DARK_OAK_WALL);
+	public static final RegistryObject<Item> SMALL_PILE_OF_STICK = block(TestModBlocks.SMALL_PILE_OF_STICK);
+	public static final RegistryObject<Item> NORMAL_PILE_OF_STICK = block(TestModBlocks.NORMAL_PILE_OF_STICK);
+	public static final RegistryObject<Item> BIG_PILE_OF_STICK = block(TestModBlocks.BIG_PILE_OF_STICK);
+	public static final RegistryObject<Item> SIMPLE_STICK = block(TestModBlocks.SIMPLE_STICK);
+	public static final RegistryObject<Item> BLOCK_OF_STICK = block(TestModBlocks.BLOCK_OF_STICK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

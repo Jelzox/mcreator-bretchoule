@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "test:big_pile_of_stick"
+    }
+  },
+  "result": {
+    "item": "test:block_of_stick",
+    "count": 1
+  }
+}

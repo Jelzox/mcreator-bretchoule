@@ -16,10 +16,13 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.test.block.WarpedWallBlock;
 import net.mcreator.test.block.SpruceWallBlock;
+import net.mcreator.test.block.SmallPileOfStickBlock;
+import net.mcreator.test.block.SimpleStickBlock;
 import net.mcreator.test.block.OakWallBlock;
 import net.mcreator.test.block.OakSecretTrapdoorBlock;
 import net.mcreator.test.block.OakSecretDoorBlock;
 import net.mcreator.test.block.OakAltSlabBlock;
+import net.mcreator.test.block.NormalPileOfStickBlock;
 import net.mcreator.test.block.JungleWallBlock;
 import net.mcreator.test.block.GrassSlabBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
@@ -28,8 +31,10 @@ import net.mcreator.test.block.ExpeditionBlockBlock;
 import net.mcreator.test.block.DirtSlabBlock;
 import net.mcreator.test.block.DarkOakWallBlock;
 import net.mcreator.test.block.CrimsonWallBlock;
+import net.mcreator.test.block.BlockOfStickBlock;
 import net.mcreator.test.block.BirchWallBlock;
 import net.mcreator.test.block.BirchAltSlabBlock;
+import net.mcreator.test.block.BigPileOfStickBlock;
 import net.mcreator.test.block.AcaciaWallBlock;
 import net.mcreator.test.TestMod;
 
@@ -52,6 +57,11 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> EXPEDITION_BLOCK = REGISTRY.register("expedition_block", () -> new ExpeditionBlockBlock());
 	public static final RegistryObject<Block> GRASS_SLAB = REGISTRY.register("grass_slab", () -> new GrassSlabBlock());
 	public static final RegistryObject<Block> DARK_OAK_WALL = REGISTRY.register("dark_oak_wall", () -> new DarkOakWallBlock());
+	public static final RegistryObject<Block> SMALL_PILE_OF_STICK = REGISTRY.register("small_pile_of_stick", () -> new SmallPileOfStickBlock());
+	public static final RegistryObject<Block> NORMAL_PILE_OF_STICK = REGISTRY.register("normal_pile_of_stick", () -> new NormalPileOfStickBlock());
+	public static final RegistryObject<Block> BIG_PILE_OF_STICK = REGISTRY.register("big_pile_of_stick", () -> new BigPileOfStickBlock());
+	public static final RegistryObject<Block> SIMPLE_STICK = REGISTRY.register("simple_stick", () -> new SimpleStickBlock());
+	public static final RegistryObject<Block> BLOCK_OF_STICK = REGISTRY.register("block_of_stick", () -> new BlockOfStickBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

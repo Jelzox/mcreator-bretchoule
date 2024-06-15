@@ -1,0 +1,55 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:SmallPileOfStick"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 203,
+          "y": 46
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_remplir_la_pile_de_bois",
+          "text": "Remplir la pile de bois",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "StickStackProcedure"
+          },
+          "width": 144,
+          "height": 20,
+          "x": 137,
+          "y": 74
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
