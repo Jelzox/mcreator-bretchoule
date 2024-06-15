@@ -11,6 +11,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.mcreator.test.world.inventory.StorageTestMenu;
 import net.mcreator.test.world.inventory.SmallPileOfStickGuiMenu;
 import net.mcreator.test.world.inventory.GuiTestGelMenu;
 import net.mcreator.test.world.inventory.FletchingTableGuiMenu;
@@ -21,4 +22,5 @@ public class TestModMenus {
 	public static final RegistryObject<MenuType<GuiTestGelMenu>> GUI_TEST_GEL = REGISTRY.register("gui_test_gel", () -> IForgeMenuType.create(GuiTestGelMenu::new));
 	public static final RegistryObject<MenuType<SmallPileOfStickGuiMenu>> SMALL_PILE_OF_STICK_GUI = REGISTRY.register("small_pile_of_stick_gui", () -> IForgeMenuType.create(SmallPileOfStickGuiMenu::new));
 	public static final RegistryObject<MenuType<FletchingTableGuiMenu>> FLETCHING_TABLE_GUI = REGISTRY.register("fletching_table_gui", () -> IForgeMenuType.create(FletchingTableGuiMenu::new));
+	public static final RegistryObject<MenuType<StorageTestMenu>> STORAGE_TEST = REGISTRY.register("storage_test", () -> IForgeMenuType.create(StorageTestMenu::new));
 }

@@ -2,15 +2,15 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "oak_planks",
+    "texture": "dark_oak_log",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 0,
+    "renderType": 2,
+    "customModelName": "darkoakladder_copie:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -18,33 +18,78 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 14.0,
         "my": 0.0,
-        "mz": 0.0,
+        "mz": 13.0,
         "Mx": 16.0,
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 13.0,
+        "Mx": 2.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 2.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 4.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 6.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 12.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 14.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 2.0,
+        "my": 8.0,
+        "mz": 14.0,
+        "Mx": 14.0,
+        "My": 10.0,
+        "Mz": 15.0,
+        "subtract": false
       }
     ],
-    "name": "Expedition Block",
+    "name": "Dark Oak Ladder Block",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:VerticalSlabs"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "axe",
     "customDrop": {
       "value": ""
     },
@@ -54,9 +99,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -65,7 +110,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "WOOD",
     "creativePickItem": {
       "value": ""
     },
@@ -73,7 +118,7 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "isLadder": false,
+    "isLadder": true,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
@@ -81,7 +126,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -102,10 +147,10 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": true,
-    "guiBoundTo": "StorageTest",
-    "openGUIOnRightClick": true,
-    "inventorySize": 18,
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

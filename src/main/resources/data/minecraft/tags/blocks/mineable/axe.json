@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "test:dark_oak_ladder_block",
+    "test:acacia_ladder_block",
     "test:jungle_ladder_block",
     "test:spruce_ladder_block",
     "test:birch_ladder_block",

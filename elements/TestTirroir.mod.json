@@ -1,6 +1,6 @@
 {
   "_fv": 60,
-  "_type": "block",
+  "_type": "animatedblock",
   "definition": {
     "texture": "oak_planks",
     "textureTop": "",
@@ -8,9 +8,8 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 0,
+    "renderType": 0,
+    "rotationMode": 3,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -21,7 +20,7 @@
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "disableOffset": false,
+    "disableOffset": true,
     "boundingBoxes": [
       {
         "mx": 0.0,
@@ -33,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Expedition Block",
+    "name": "Test Tirroir",
     "specialInformation": {
       "fixedValue": []
     },
@@ -54,9 +53,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -77,11 +76,12 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
+    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -101,7 +101,6 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "StorageTest",
     "openGUIOnRightClick": true,
@@ -109,6 +108,7 @@
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
+    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -119,7 +119,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "generateFeature": false,
+    "onRightClicked": {
+      "name": "TestTirroirLorsDunClicDroitSurLeBloc"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -130,6 +132,9 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 64,
+    "normal": "tirroir_-_converted.geo.json",
+    "displaySettings": "tirroir_-_converted.geo.json",
+    "blockstateList": []
   }
 }

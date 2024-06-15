@@ -63,6 +63,9 @@ public class TestModTabs {
 				tabData.accept(TestModBlocks.BIRCH_LADDER_BLOCK.get().asItem());
 				tabData.accept(TestModBlocks.SPRUCE_LADDER_BLOCK.get().asItem());
 				tabData.accept(TestModBlocks.JUNGLE_LADDER_BLOCK.get().asItem());
+				tabData.accept(TestModBlocks.ACACIA_LADDER_BLOCK.get().asItem());
+				tabData.accept(TestModBlocks.DARK_OAK_LADDER_BLOCK.get().asItem());
+				tabData.accept(TestModBlocks.TEST_TIRROIR.get().asItem());
 			})
 
 					.build());

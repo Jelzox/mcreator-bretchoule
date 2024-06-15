@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.test.block.display.TestTirroirDisplayItem;
 import net.mcreator.test.TestMod;
 
 public class TestModItems {
@@ -45,6 +46,9 @@ public class TestModItems {
 	public static final RegistryObject<Item> BIRCH_LADDER_BLOCK = block(TestModBlocks.BIRCH_LADDER_BLOCK);
 	public static final RegistryObject<Item> SPRUCE_LADDER_BLOCK = block(TestModBlocks.SPRUCE_LADDER_BLOCK);
 	public static final RegistryObject<Item> JUNGLE_LADDER_BLOCK = block(TestModBlocks.JUNGLE_LADDER_BLOCK);
+	public static final RegistryObject<Item> ACACIA_LADDER_BLOCK = block(TestModBlocks.ACACIA_LADDER_BLOCK);
+	public static final RegistryObject<Item> DARK_OAK_LADDER_BLOCK = block(TestModBlocks.DARK_OAK_LADDER_BLOCK);
+	public static final RegistryObject<Item> TEST_TIRROIR = REGISTRY.register(TestModBlocks.TEST_TIRROIR.getId().getPath(), () -> new TestTirroirDisplayItem(TestModBlocks.TEST_TIRROIR.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

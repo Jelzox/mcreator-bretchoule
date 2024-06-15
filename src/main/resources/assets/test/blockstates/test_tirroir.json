@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "test:custom/test_tirroir_particle"
+    },
+    "facing=east": {
+      "model": "test:custom/test_tirroir_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "test:custom/test_tirroir_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "test:custom/test_tirroir_particle",
+      "y": 270
+    }
+  }
+}

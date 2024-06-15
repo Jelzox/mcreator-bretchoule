@@ -1,0 +1,9 @@
+{
+  "parent": "test:custom/darkoakladder_copie",
+  "textures": {
+    "all": "test:block/dark_oak_log",
+    "particle": "test:block/dark_oak_log",
+    "0": "test:block/dark_oak_log"
+  },
+  "render_type": "solid"
+}

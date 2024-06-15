@@ -1,9 +1,9 @@
 {
-  "parent": "test:custom/ladder_block_-_converted",
+  "parent": "test:custom/birch_ladder_block_-_converted_-_copie",
   "textures": {
     "all": "test:block/birch_log",
     "particle": "test:block/birch_log",
-    "0": "test:block/oak_log"
+    "0": "test:block/birch_log"
   },
   "render_type": "solid"
 }

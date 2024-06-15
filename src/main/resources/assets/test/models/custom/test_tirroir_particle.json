@@ -1,0 +1,6 @@
+{
+  "parent": "test:displaysettings/tirroir_-_converted.geo",
+  "textures": {
+    "particle": "test:block/oak_planks"
+  }
+}

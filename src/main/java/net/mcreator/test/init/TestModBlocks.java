@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.test.block.WarpedWallBlock;
+import net.mcreator.test.block.TestTirroirBlock;
 import net.mcreator.test.block.SpruceWallBlock;
 import net.mcreator.test.block.SpruceLadderBlockBlock;
 import net.mcreator.test.block.SmallPileOfStickBlock;
@@ -33,6 +34,7 @@ import net.mcreator.test.block.GlassDoorBlock;
 import net.mcreator.test.block.ExpeditionBlockBlock;
 import net.mcreator.test.block.DirtSlabBlock;
 import net.mcreator.test.block.DarkOakWallBlock;
+import net.mcreator.test.block.DarkOakLadderBlockBlock;
 import net.mcreator.test.block.CrimsonWallBlock;
 import net.mcreator.test.block.BlockOfStickBlock;
 import net.mcreator.test.block.BirchWallBlock;
@@ -40,6 +42,7 @@ import net.mcreator.test.block.BirchLadderBlockBlock;
 import net.mcreator.test.block.BirchAltSlabBlock;
 import net.mcreator.test.block.BigPileOfStickBlock;
 import net.mcreator.test.block.AcaciaWallBlock;
+import net.mcreator.test.block.AcaciaLadderBlockBlock;
 import net.mcreator.test.TestMod;
 
 public class TestModBlocks {
@@ -70,6 +73,9 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> BIRCH_LADDER_BLOCK = REGISTRY.register("birch_ladder_block", () -> new BirchLadderBlockBlock());
 	public static final RegistryObject<Block> SPRUCE_LADDER_BLOCK = REGISTRY.register("spruce_ladder_block", () -> new SpruceLadderBlockBlock());
 	public static final RegistryObject<Block> JUNGLE_LADDER_BLOCK = REGISTRY.register("jungle_ladder_block", () -> new JungleLadderBlockBlock());
+	public static final RegistryObject<Block> ACACIA_LADDER_BLOCK = REGISTRY.register("acacia_ladder_block", () -> new AcaciaLadderBlockBlock());
+	public static final RegistryObject<Block> DARK_OAK_LADDER_BLOCK = REGISTRY.register("dark_oak_ladder_block", () -> new DarkOakLadderBlockBlock());
+	public static final RegistryObject<Block> TEST_TIRROIR = REGISTRY.register("test_tirroir", () -> new TestTirroirBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

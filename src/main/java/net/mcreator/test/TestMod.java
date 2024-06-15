@@ -22,6 +22,7 @@ import net.mcreator.test.init.TestModMenus;
 import net.mcreator.test.init.TestModItems;
 import net.mcreator.test.init.TestModEntities;
 import net.mcreator.test.init.TestModBlocks;
+import net.mcreator.test.init.TestModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -44,7 +45,7 @@ public class TestMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		TestModBlocks.REGISTRY.register(bus);
-
+		TestModBlockEntities.REGISTRY.register(bus);
 		TestModItems.REGISTRY.register(bus);
 		TestModEntities.REGISTRY.register(bus);
 
