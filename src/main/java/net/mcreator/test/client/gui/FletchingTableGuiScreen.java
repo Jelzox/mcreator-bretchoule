@@ -6,9 +6,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.test.world.inventory.FletchingTableGuiMenu;
+import net.mcreator.test.network.FletchingTableGuiButtonMessage;
+import net.mcreator.test.TestMod;
 
 import java.util.HashMap;
 
@@ -19,6 +22,7 @@ public class FletchingTableGuiScreen extends AbstractContainerScreen<FletchingTa
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_uncraft_arrow;
 
 	public FletchingTableGuiScreen(FletchingTableGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -75,5 +79,13 @@ public class FletchingTableGuiScreen extends AbstractContainerScreen<FletchingTa
 	@Override
 	public void init() {
 		super.init();
+		button_uncraft_arrow = Button.builder(Component.translatable("gui.test.fletching_table_gui.button_uncraft_arrow"), e -> {
+			if (true) {
+				TestMod.PACKET_HANDLER.sendToServer(new FletchingTableGuiButtonMessage(0, x, y, z));
+				FletchingTableGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 51, this.topPos + 24, 93, 20).build();
+		guistate.put("button:button_uncraft_arrow", button_uncraft_arrow);
+		this.addRenderableWidget(button_uncraft_arrow);
 	}
 }

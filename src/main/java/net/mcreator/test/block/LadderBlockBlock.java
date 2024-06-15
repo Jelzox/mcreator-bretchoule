@@ -4,6 +4,7 @@ package net.mcreator.test.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -17,20 +18,22 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.DirectionalBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class SimpleStickBlock extends Block implements SimpleWaterloggedBlock {
-	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+public class LadderBlockBlock extends Block implements SimpleWaterloggedBlock {
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public SimpleStickBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+	public LadderBlockBlock() {
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.WOOD).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -52,12 +55,10 @@ public class SimpleStickBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(7, 7, 0, 9, 9, 16);
-			case NORTH -> box(7, 7, 0, 9, 9, 16);
-			case EAST -> box(0, 7, 7, 16, 9, 9);
-			case WEST -> box(0, 7, 7, 16, 9, 9);
-			case UP -> box(7, 0, 7, 9, 16, 9);
-			case DOWN -> box(7, 0, 7, 9, 16, 9);
+			default -> Shapes.or(box(0, 0, 0, 2, 16, 3), box(14, 0, 0, 16, 16, 3), box(2, 0, 1, 14, 2, 2), box(2, 4, 1, 14, 6, 2), box(2, 12, 1, 14, 14, 2), box(2, 8, 1, 14, 10, 2));
+			case NORTH -> Shapes.or(box(14, 0, 13, 16, 16, 16), box(0, 0, 13, 2, 16, 16), box(2, 0, 14, 14, 2, 15), box(2, 4, 14, 14, 6, 15), box(2, 12, 14, 14, 14, 15), box(2, 8, 14, 14, 10, 15));
+			case EAST -> Shapes.or(box(0, 0, 14, 3, 16, 16), box(0, 0, 0, 3, 16, 2), box(1, 0, 2, 2, 2, 14), box(1, 4, 2, 2, 6, 14), box(1, 12, 2, 2, 14, 14), box(1, 8, 2, 2, 10, 14));
+			case WEST -> Shapes.or(box(13, 0, 0, 16, 16, 2), box(13, 0, 14, 16, 16, 16), box(14, 0, 2, 15, 2, 14), box(14, 4, 2, 15, 6, 14), box(14, 12, 2, 15, 14, 14), box(14, 8, 2, 15, 10, 14));
 		};
 	}
 
@@ -69,6 +70,8 @@ public class SimpleStickBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
 		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
+			return this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, flag);
 		return this.defaultBlockState().setValue(FACING, context.getClickedFace()).setValue(WATERLOGGED, flag);
 	}
 
@@ -91,5 +94,10 @@ public class SimpleStickBlock extends Block implements SimpleWaterloggedBlock {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public boolean isLadder(BlockState state, LevelReader world, BlockPos pos, LivingEntity entity) {
+		return true;
 	}
 }

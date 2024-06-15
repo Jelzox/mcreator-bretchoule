@@ -20,6 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.test.init.TestModTabs;
 import net.mcreator.test.init.TestModMenus;
 import net.mcreator.test.init.TestModItems;
+import net.mcreator.test.init.TestModEntities;
 import net.mcreator.test.init.TestModBlocks;
 
 import java.util.function.Supplier;
@@ -45,6 +46,7 @@ public class TestMod {
 		TestModBlocks.REGISTRY.register(bus);
 
 		TestModItems.REGISTRY.register(bus);
+		TestModEntities.REGISTRY.register(bus);
 
 		TestModTabs.REGISTRY.register(bus);
 

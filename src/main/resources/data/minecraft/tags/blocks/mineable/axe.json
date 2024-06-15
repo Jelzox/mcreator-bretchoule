@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "test:ladder_block",
     "test:block_of_stick",
     "test:simple_stick",
     "test:small_pile_of_stick",

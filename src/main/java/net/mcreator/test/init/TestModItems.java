@@ -7,6 +7,7 @@ package net.mcreator.test.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -39,6 +40,8 @@ public class TestModItems {
 	public static final RegistryObject<Item> BIG_PILE_OF_STICK = block(TestModBlocks.BIG_PILE_OF_STICK);
 	public static final RegistryObject<Item> SIMPLE_STICK = block(TestModBlocks.SIMPLE_STICK);
 	public static final RegistryObject<Item> BLOCK_OF_STICK = block(TestModBlocks.BLOCK_OF_STICK);
+	public static final RegistryObject<Item> LADDER_BLOCK = block(TestModBlocks.LADDER_BLOCK);
+	public static final RegistryObject<Item> FLY_ANIMATION_SPAWN_EGG = REGISTRY.register("fly_animation_spawn_egg", () -> new ForgeSpawnEggItem(TestModEntities.FLY_ANIMATION, -1, -1, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

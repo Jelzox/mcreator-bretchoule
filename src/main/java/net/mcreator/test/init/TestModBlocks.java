@@ -23,6 +23,7 @@ import net.mcreator.test.block.OakSecretTrapdoorBlock;
 import net.mcreator.test.block.OakSecretDoorBlock;
 import net.mcreator.test.block.OakAltSlabBlock;
 import net.mcreator.test.block.NormalPileOfStickBlock;
+import net.mcreator.test.block.LadderBlockBlock;
 import net.mcreator.test.block.JungleWallBlock;
 import net.mcreator.test.block.GrassSlabBlock;
 import net.mcreator.test.block.GlassTrapdoorBlock;
@@ -62,6 +63,7 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> BIG_PILE_OF_STICK = REGISTRY.register("big_pile_of_stick", () -> new BigPileOfStickBlock());
 	public static final RegistryObject<Block> SIMPLE_STICK = REGISTRY.register("simple_stick", () -> new SimpleStickBlock());
 	public static final RegistryObject<Block> BLOCK_OF_STICK = REGISTRY.register("block_of_stick", () -> new BlockOfStickBlock());
+	public static final RegistryObject<Block> LADDER_BLOCK = REGISTRY.register("ladder_block", () -> new LadderBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

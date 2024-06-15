@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 8,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "Items.STICK"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.STICK"
+      },
+      {
+        "value": "Blocks.LOG"
+      },
+      {
+        "value": "Blocks.LOG"
+      },
+      {
+        "value": "Blocks.LOG"
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:SimpleStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SimpleStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SimpleStick"
+        "value": "Items.STICK"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SmallPileOfStick"
+      "value": "CUSTOM:LadderBlock"
     },
-    "name": "small_pill_of_stick_craft",
+    "name": "ladder_block_craft",
     "namespace": "mod"
   }
 }
