@@ -1,16 +1,7 @@
 
 package net.mcreator.test.block;
 
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.WallBlock;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
 public class WarpedWallBlock extends WallBlock {
 	public WarpedWallBlock() {

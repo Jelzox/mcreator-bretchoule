@@ -1,16 +1,6 @@
 package net.mcreator.test.procedures;
 
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.client.gui.components.Checkbox;
-
-import java.util.function.Supplier;
-import java.util.Map;
-import java.util.HashMap;
+import net.minecraftforge.eventbus.api.Event;
 
 public class ProcedurCommandProcedure {
 	public static void execute(Entity entity, HashMap guistate) {

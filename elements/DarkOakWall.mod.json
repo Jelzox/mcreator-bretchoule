@@ -43,7 +43,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:VerticalSlabs"
+      "value": "CUSTOM:MoreWall"
     },
     "destroyTool": "axe",
     "customDrop": {

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "test:blocks/normal_pile_of_stick",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "test:normal_pile_of_stick"
+        }
+      ]
+    }
+  ]
+}

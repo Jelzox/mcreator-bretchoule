@@ -1,0 +1,9 @@
+{
+  "parent": "test:custom/spruce_ladder_copie",
+  "textures": {
+    "all": "test:block/spruce_log",
+    "particle": "test:block/spruce_log",
+    "0": "test:block/spruce_log"
+  },
+  "render_type": "solid"
+}

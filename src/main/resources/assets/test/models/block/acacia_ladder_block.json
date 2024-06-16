@@ -1,0 +1,9 @@
+{
+  "parent": "test:custom/acacia_ladder_copie",
+  "textures": {
+    "all": "test:block/acacia_log",
+    "particle": "test:block/acacia_log",
+    "0": "test:block/acacia_log"
+  },
+  "render_type": "solid"
+}

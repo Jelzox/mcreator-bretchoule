@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "test:block/small_pile_of_stick"
+    },
+    "facing=east": {
+      "model": "test:block/small_pile_of_stick",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "test:block/small_pile_of_stick",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "test:block/small_pile_of_stick",
+      "y": 270
+    }
+  }
+}
