@@ -7,11 +7,11 @@
   ],
   "key": {
     "a": {
-      "item": "test:deleted_mod_element"
+      "item": "test:simple_stick"
     }
   },
   "result": {
-    "item": "test:deleted_mod_element",
+    "item": "test:small_pile_of_stick",
     "count": 1
   }
 }

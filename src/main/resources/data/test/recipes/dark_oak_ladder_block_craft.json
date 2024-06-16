@@ -11,11 +11,11 @@
       "item": "minecraft:stick"
     },
     "b": {
-      "item": "test:deleted_mod_element"
+      "item": "test:dark_oak_ladder_block"
     }
   },
   "result": {
-    "item": "test:deleted_mod_element",
+    "item": "test:dark_oak_ladder_block",
     "count": 4
   }
 }

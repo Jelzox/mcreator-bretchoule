@@ -1,13 +1,27 @@
 package net.mcreator.test.client.gui;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.test.world.inventory.SmallPileOfStickGuiMenu;
+import net.mcreator.test.network.SmallPileOfStickGuiButtonMessage;
+import net.mcreator.test.TestMod;
+
+import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class SmallPileOfStickGuiScreen extends AbstractContainerScreen<SmallPileOfStickGuiMenu> {
-
 	private final static HashMap<String, Object> guistate = SmallPileOfStickGuiMenu.guistate;
-
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-
 	Button button_remplir_la_pile_de_bois;
 
 	public SmallPileOfStickGuiScreen(SmallPileOfStickGuiMenu container, Inventory inventory, Component text) {
@@ -26,11 +40,8 @@ public class SmallPileOfStickGuiScreen extends AbstractContainerScreen<SmallPile
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
-
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-
 	}
 
 	@Override
@@ -38,9 +49,7 @@ public class SmallPileOfStickGuiScreen extends AbstractContainerScreen<SmallPile
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -50,7 +59,6 @@ public class SmallPileOfStickGuiScreen extends AbstractContainerScreen<SmallPile
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-
 		return super.keyPressed(key, b, c);
 	}
 
@@ -66,17 +74,13 @@ public class SmallPileOfStickGuiScreen extends AbstractContainerScreen<SmallPile
 	@Override
 	public void init() {
 		super.init();
-
 		button_remplir_la_pile_de_bois = Button.builder(Component.translatable("gui.test.small_pile_of_stick_gui.button_remplir_la_pile_de_bois"), e -> {
 			if (true) {
 				TestMod.PACKET_HANDLER.sendToServer(new SmallPileOfStickGuiButtonMessage(0, x, y, z));
 				SmallPileOfStickGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 11, this.topPos + 37, 144, 20).build();
-
 		guistate.put("button:button_remplir_la_pile_de_bois", button_remplir_la_pile_de_bois);
 		this.addRenderableWidget(button_remplir_la_pile_de_bois);
-
 	}
-
 }

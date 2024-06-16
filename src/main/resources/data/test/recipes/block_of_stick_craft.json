@@ -8,11 +8,11 @@
   ],
   "key": {
     "a": {
-      "item": "test:deleted_mod_element"
+      "item": "test:big_pile_of_stick"
     }
   },
   "result": {
-    "item": "test:deleted_mod_element",
+    "item": "test:block_of_stick",
     "count": 1
   }
 }

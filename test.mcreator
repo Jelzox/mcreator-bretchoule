@@ -650,6 +650,7 @@
       "registry_name": "expedition_block",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/test/block/entity/ExpeditionBlockBlockEntity.java",
           "src/main/resources/assets/test/blockstates/expedition_block.json",
           "src/main/resources/assets/test/models/block/expedition_block.json",
           "src/main/resources/data/test/loot_tables/blocks/expedition_block.json",
@@ -663,7 +664,7 @@
       "name": "ProcedurCommand",
       "type": "procedure",
       "sortid": 69,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "procedur_command",
       "metadata": {
@@ -868,7 +869,7 @@
       "name": "SmallPileOfStickGui",
       "type": "gui",
       "sortid": 82,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "small_pile_of_stick_gui",
       "metadata": {
@@ -945,29 +946,6 @@
       "path": "~/Deco And Util/Ladder"
     },
     {
-      "name": "TestTirroir",
-      "type": "animatedblock",
-      "sortid": 107,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_tirroir",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/block/renderer/TestTirroirTileRenderer.java",
-          "src/main/resources/assets/test/models/custom/test_tirroir_particle.json",
-          "src/main/java/net/mcreator/test/block/renderer/TestTirroirDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/test/block/entity/TestTirroirTileEntity.java",
-          "src/main/resources/assets/test/blockstates/test_tirroir.json",
-          "src/main/resources/assets/test/models/item/test_tirroir.json",
-          "src/main/java/net/mcreator/test/block/display/TestTirroirDisplayItem.java",
-          "src/main/java/net/mcreator/test/block/model/TestTirroirBlockModel.java",
-          "src/main/java/net/mcreator/test/block/model/TestTirroirDisplayModel.java",
-          "src/main/java/net/mcreator/test/block/TestTirroirBlock.java"
-        ]
-      },
-      "path": "~/Test Zone"
-    },
-    {
       "name": "BlockOfStickCraft",
       "type": "recipe",
       "sortid": 88,
@@ -1026,24 +1004,6 @@
       "path": "~/Deco And Util/Ladder"
     },
     {
-      "name": "FlyAnimation",
-      "type": "animatedentity",
-      "sortid": 93,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "fly_animation",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/test/entity/FlyAnimationEntity.java",
-          "src/main/resources/data/test/forge/biome_modifier/fly_animation_biome_modifier.json",
-          "src/main/java/net/mcreator/test/client/renderer/FlyAnimationRenderer.java",
-          "src/main/resources/assets/test/models/item/fly_animation_spawn_egg.json",
-          "src/main/java/net/mcreator/test/entity/model/FlyAnimationModel.java"
-        ]
-      },
-      "path": "~/Mobs"
-    },
-    {
       "name": "SmallPillOfStickCraft",
       "type": "recipe",
       "sortid": 79,
@@ -1061,7 +1021,7 @@
       "name": "FletchingTableGui",
       "type": "gui",
       "sortid": 85,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fletching_table_gui",
       "metadata": {
@@ -1091,7 +1051,7 @@
       "name": "StorageTest",
       "type": "gui",
       "sortid": 109,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "storage_test",
       "metadata": {
@@ -1186,7 +1146,7 @@
       "name": "UncraftArrow",
       "type": "procedure",
       "sortid": 89,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "uncraft_arrow",
       "metadata": {
@@ -1323,7 +1283,7 @@
       "name": "StickStackProcedure",
       "type": "procedure",
       "sortid": 81,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "stick_stack_procedure",
       "metadata": {
@@ -1359,7 +1319,7 @@
       "name": "FletchingTableOpenGui",
       "type": "procedure",
       "sortid": 84,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fletching_table_open_gui",
       "metadata": {
@@ -1395,7 +1355,7 @@
       "name": "ExpeditionBlockLorsDunClicDroitSurLeBloc",
       "type": "procedure",
       "sortid": 110,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "expedition_block_lors_dun_clic_droit_sur_le_bloc",
       "metadata": {
@@ -1427,9 +1387,6 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:DirtSlab"
-    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:LadderBlock",
       "~CUSTOM:AcaciaLadderBlock",
@@ -1444,7 +1401,6 @@
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
       "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
       "~CUSTOM:SpruceWall",
       "~CUSTOM:JungleWall",
       "~CUSTOM:BirchWall",
@@ -1454,59 +1410,78 @@
       "~CUSTOM:OakSecretDoor",
       "~CUSTOM:OakAltSlab"
     ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:DirtSlab"
     ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:DarkOakWall",
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
       "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
       "~CUSTOM:SpruceWall",
       "~CUSTOM:JungleWall",
       "~CUSTOM:BirchWall",
       "~CUSTOM:OakWall"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab",
+      "~CUSTOM:DirtSlab"
     ]
   },
   "language_map": {
     "en_us": {
       "block.ultad.oak_alt_slab": "Oak Vertical Slab",
       "block.test.birch_alt_slab": "Birch Vertical Slab",
-      "item_group.test.secret_entrances": "Secret Entrances",
+      "gui.test.small_pile_of_stick_gui.button_remplir_la_pile_de_bois": "Remplir la pile de bois",
       "block.test.oak_alt_slab": "Oak Vertical Slab",
-      "item_group.test.test": "VerticalSlabs",
-      "block.test.oak_secret_door": "Secret Oak Door",
       "block.test.glass_door": "Glass Door",
-      "block.ultad.secret_oak_door": "Secret Oak Door",
-      "gui.test.gui_test_gel.Glacon2": "Glacon2",
-      "block.test.expedition_block": "Expedition Block",
       "item_group.ultad.vertical_slabs": "Vertical Slabs",
-      "item_group.ultad.test": "VerticalSlabs",
       "block.test.dark_oak_wall": "Dark Oak Wall",
       "block.ultad.glass_door": "Test Glass Door",
+      "block.test.ladder_block": "Oak Ladder Block",
+      "item_group.test.utilanddecocreativetab": "Utilanddecocreativetab",
+      "gui.test.storage_test.label_storage": "Storage",
+      "block.test.acacia_ladder_block": "Acacia Ladder Block",
+      "block.test.crimson_wall": "Crimson Wall",
+      "block.test.birch_ladder_block": "Birch Ladder Block",
+      "block.test.warped_wall": "Warped Wall",
+      "block.test.block_of_stick": "Block Of Stick",
+      "advancements.secret_avancement.descr": "The player opened a secret door",
+      "block.test.spruce_ladder_block": "Spruce Ladder Block",
+      "advancements.i_see_you.descr": "The player place a glass door",
+      "block.test.grass_slab": "Grass Slab",
+      "block.test.oak_wall": "Oak Wall",
+      "gui.test.fletching_table_gui.button_uncraft_arrow": "Uncraft Arrow",
+      "item_group.test.more_wall": "More Wall",
+      "item_group.test.secret_entrances": "Secret Entrances",
+      "block.test.small_pile_of_stick": "Small Pile Of Stick",
+      "item_group.test.test": "VerticalSlabs",
+      "block.test.oak_secret_door": "Secret Oak Door",
+      "gui.test.gui_test_gel.Glacon2": "Glacon2",
+      "block.ultad.secret_oak_door": "Secret Oak Door",
+      "block.test.expedition_block": "Expedition Block",
+      "item_group.ultad.test": "VerticalSlabs",
+      "block.test.simple_stick": "Simple Stick",
+      "block.test.normal_pile_of_stick": "Small Pile Of Stick",
+      "block.test.jungle_ladder_block": "Jungle Ladder Block",
       "block.test.glass_trapdoor": "Test Glass Door",
       "item_group.ultad.secret_entrances": "Secret Entrances",
       "item_group.test.vertical_slabs": "Vertical Slabs",
       "gui.test.gui_test_gel.button_convertir_en_glace": "Convertir en glace",
       "block.test.acacia_wall": "Acacia Wall",
-      "advancements.i_see_you.title": "I Can See You",
       "block.test.birch_wall": "Birch Wall",
-      "block.test.crimson_wall": "Crimson Wall",
+      "advancements.i_see_you.title": "I Can See You",
       "block.test.dirt_slab": "Dirt Slab",
       "block.ultad.glass_trapdoor": "Test Glass Door",
-      "block.test.warped_wall": "Warped Wall",
-      "advancements.secret_avancement.descr": "The player opened a secret door",
-      "advancements.i_see_you.descr": "The player place a glass door",
       "gui.test.gui_test_gel.Glacon": "Glacon",
       "block.ultad.secret_oak_trapdoor": "Secret Oak Trap",
       "gui.test.gui_test_gel.button_congeler": "Congeler",
       "block.test.oak_secret_trapdoor": "Secret Oak Trap",
-      "block.test.grass_slab": "Grass Slab",
-      "block.test.oak_wall": "Oak Wall",
+      "block.test.big_pile_of_stick": "Big Pile Of Stick",
       "advancements.secret_avancement.title": "Secret Avancement",
       "block.test.jungle_wall": "Jungle Wall",
-      "block.test.spruce_wall": "Spruce Wall"
+      "block.test.spruce_wall": "Spruce Wall",
+      "block.test.dark_oak_ladder_block": "Dark Oak Ladder Block"
     }
   },
   "foldersRoot": {
