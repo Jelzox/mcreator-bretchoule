@@ -15,7 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.test.block.WarpedWallBlock;
-import net.mcreator.test.block.TestTirroirBlock;
 import net.mcreator.test.block.SpruceWallBlock;
 import net.mcreator.test.block.SpruceLadderBlockBlock;
 import net.mcreator.test.block.SmallPileOfStickBlock;
@@ -64,18 +63,17 @@ public class TestModBlocks {
 	public static final RegistryObject<Block> EXPEDITION_BLOCK = REGISTRY.register("expedition_block", () -> new ExpeditionBlockBlock());
 	public static final RegistryObject<Block> GRASS_SLAB = REGISTRY.register("grass_slab", () -> new GrassSlabBlock());
 	public static final RegistryObject<Block> DARK_OAK_WALL = REGISTRY.register("dark_oak_wall", () -> new DarkOakWallBlock());
-	public static final RegistryObject<Block> SMALL_PILE_OF_STICK = REGISTRY.register("small_pile_of_stick", () -> new SmallPileOfStickBlock());
 	public static final RegistryObject<Block> NORMAL_PILE_OF_STICK = REGISTRY.register("normal_pile_of_stick", () -> new NormalPileOfStickBlock());
-	public static final RegistryObject<Block> BIG_PILE_OF_STICK = REGISTRY.register("big_pile_of_stick", () -> new BigPileOfStickBlock());
-	public static final RegistryObject<Block> SIMPLE_STICK = REGISTRY.register("simple_stick", () -> new SimpleStickBlock());
-	public static final RegistryObject<Block> BLOCK_OF_STICK = REGISTRY.register("block_of_stick", () -> new BlockOfStickBlock());
-	public static final RegistryObject<Block> LADDER_BLOCK = REGISTRY.register("ladder_block", () -> new LadderBlockBlock());
 	public static final RegistryObject<Block> BIRCH_LADDER_BLOCK = REGISTRY.register("birch_ladder_block", () -> new BirchLadderBlockBlock());
-	public static final RegistryObject<Block> SPRUCE_LADDER_BLOCK = REGISTRY.register("spruce_ladder_block", () -> new SpruceLadderBlockBlock());
-	public static final RegistryObject<Block> JUNGLE_LADDER_BLOCK = REGISTRY.register("jungle_ladder_block", () -> new JungleLadderBlockBlock());
-	public static final RegistryObject<Block> ACACIA_LADDER_BLOCK = REGISTRY.register("acacia_ladder_block", () -> new AcaciaLadderBlockBlock());
 	public static final RegistryObject<Block> DARK_OAK_LADDER_BLOCK = REGISTRY.register("dark_oak_ladder_block", () -> new DarkOakLadderBlockBlock());
-	public static final RegistryObject<Block> TEST_TIRROIR = REGISTRY.register("test_tirroir", () -> new TestTirroirBlock());
+	public static final RegistryObject<Block> BLOCK_OF_STICK = REGISTRY.register("block_of_stick", () -> new BlockOfStickBlock());
+	public static final RegistryObject<Block> SPRUCE_LADDER_BLOCK = REGISTRY.register("spruce_ladder_block", () -> new SpruceLadderBlockBlock());
+	public static final RegistryObject<Block> SMALL_PILE_OF_STICK = REGISTRY.register("small_pile_of_stick", () -> new SmallPileOfStickBlock());
+	public static final RegistryObject<Block> JUNGLE_LADDER_BLOCK = REGISTRY.register("jungle_ladder_block", () -> new JungleLadderBlockBlock());
+	public static final RegistryObject<Block> SIMPLE_STICK = REGISTRY.register("simple_stick", () -> new SimpleStickBlock());
+	public static final RegistryObject<Block> BIG_PILE_OF_STICK = REGISTRY.register("big_pile_of_stick", () -> new BigPileOfStickBlock());
+	public static final RegistryObject<Block> ACACIA_LADDER_BLOCK = REGISTRY.register("acacia_ladder_block", () -> new AcaciaLadderBlockBlock());
+	public static final RegistryObject<Block> LADDER_BLOCK = REGISTRY.register("ladder_block", () -> new LadderBlockBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

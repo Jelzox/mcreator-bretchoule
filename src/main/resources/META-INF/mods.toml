@@ -21,16 +21,4 @@ authors="Jelzox, bretchou"
     side="BOTH"
 
 
-[[dependencies.test]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.test]]
-    modId="jei"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

@@ -7,14 +7,12 @@ package net.mcreator.test.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.test.block.display.TestTirroirDisplayItem;
 import net.mcreator.test.TestMod;
 
 public class TestModItems {
@@ -36,19 +34,17 @@ public class TestModItems {
 	public static final RegistryObject<Item> EXPEDITION_BLOCK = block(TestModBlocks.EXPEDITION_BLOCK);
 	public static final RegistryObject<Item> GRASS_SLAB = block(TestModBlocks.GRASS_SLAB);
 	public static final RegistryObject<Item> DARK_OAK_WALL = block(TestModBlocks.DARK_OAK_WALL);
-	public static final RegistryObject<Item> SMALL_PILE_OF_STICK = block(TestModBlocks.SMALL_PILE_OF_STICK);
 	public static final RegistryObject<Item> NORMAL_PILE_OF_STICK = block(TestModBlocks.NORMAL_PILE_OF_STICK);
-	public static final RegistryObject<Item> BIG_PILE_OF_STICK = block(TestModBlocks.BIG_PILE_OF_STICK);
-	public static final RegistryObject<Item> SIMPLE_STICK = block(TestModBlocks.SIMPLE_STICK);
-	public static final RegistryObject<Item> BLOCK_OF_STICK = block(TestModBlocks.BLOCK_OF_STICK);
-	public static final RegistryObject<Item> LADDER_BLOCK = block(TestModBlocks.LADDER_BLOCK);
-	public static final RegistryObject<Item> FLY_ANIMATION_SPAWN_EGG = REGISTRY.register("fly_animation_spawn_egg", () -> new ForgeSpawnEggItem(TestModEntities.FLY_ANIMATION, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> BIRCH_LADDER_BLOCK = block(TestModBlocks.BIRCH_LADDER_BLOCK);
-	public static final RegistryObject<Item> SPRUCE_LADDER_BLOCK = block(TestModBlocks.SPRUCE_LADDER_BLOCK);
-	public static final RegistryObject<Item> JUNGLE_LADDER_BLOCK = block(TestModBlocks.JUNGLE_LADDER_BLOCK);
-	public static final RegistryObject<Item> ACACIA_LADDER_BLOCK = block(TestModBlocks.ACACIA_LADDER_BLOCK);
 	public static final RegistryObject<Item> DARK_OAK_LADDER_BLOCK = block(TestModBlocks.DARK_OAK_LADDER_BLOCK);
-	public static final RegistryObject<Item> TEST_TIRROIR = REGISTRY.register(TestModBlocks.TEST_TIRROIR.getId().getPath(), () -> new TestTirroirDisplayItem(TestModBlocks.TEST_TIRROIR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BLOCK_OF_STICK = block(TestModBlocks.BLOCK_OF_STICK);
+	public static final RegistryObject<Item> SPRUCE_LADDER_BLOCK = block(TestModBlocks.SPRUCE_LADDER_BLOCK);
+	public static final RegistryObject<Item> SMALL_PILE_OF_STICK = block(TestModBlocks.SMALL_PILE_OF_STICK);
+	public static final RegistryObject<Item> JUNGLE_LADDER_BLOCK = block(TestModBlocks.JUNGLE_LADDER_BLOCK);
+	public static final RegistryObject<Item> SIMPLE_STICK = block(TestModBlocks.SIMPLE_STICK);
+	public static final RegistryObject<Item> BIG_PILE_OF_STICK = block(TestModBlocks.BIG_PILE_OF_STICK);
+	public static final RegistryObject<Item> ACACIA_LADDER_BLOCK = block(TestModBlocks.ACACIA_LADDER_BLOCK);
+	public static final RegistryObject<Item> LADDER_BLOCK = block(TestModBlocks.LADDER_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items
