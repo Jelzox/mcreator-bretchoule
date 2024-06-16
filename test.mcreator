@@ -490,10 +490,7 @@
       "registry_name": "birch_wall",
       "metadata": {
         "files": [
-          "src/main/resources/data/test/worldgen/placed_feature/birch_wall.json",
           "src/main/resources/assets/test/models/block/birch_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/birch_wall.json",
-          "src/main/resources/data/test/forge/biome_modifier/birch_wall_biome_modifier.json",
           "src/main/resources/assets/test/models/block/birch_wall_side_tall.json",
           "src/main/resources/assets/test/blockstates/birch_wall.json",
           "src/main/resources/assets/test/models/block/birch_wall_inventory.json",
@@ -517,13 +514,10 @@
           "src/main/resources/assets/test/models/block/jungle_wall_inventory.json",
           "src/main/resources/data/test/loot_tables/blocks/jungle_wall.json",
           "src/main/resources/assets/test/blockstates/jungle_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/jungle_wall.json",
           "src/main/java/net/mcreator/test/block/JungleWallBlock.java",
           "src/main/resources/assets/test/models/block/jungle_wall_side_tall.json",
           "src/main/resources/assets/test/models/block/jungle_wall_post.json",
-          "src/main/resources/data/test/forge/biome_modifier/jungle_wall_biome_modifier.json",
           "src/main/resources/assets/test/models/item/jungle_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/jungle_wall.json",
           "src/main/resources/assets/test/models/block/jungle_wall.json"
         ]
       },
@@ -538,9 +532,6 @@
       "registry_name": "spruce_wall",
       "metadata": {
         "files": [
-          "src/main/resources/data/test/forge/biome_modifier/spruce_wall_biome_modifier.json",
-          "src/main/resources/data/test/worldgen/configured_feature/spruce_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/spruce_wall.json",
           "src/main/resources/assets/test/blockstates/spruce_wall.json",
           "src/main/resources/assets/test/models/item/spruce_wall.json",
           "src/main/resources/assets/test/models/block/spruce_wall_side_tall.json",
@@ -563,15 +554,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/test/models/item/acacia_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/acacia_wall.json",
           "src/main/resources/assets/test/blockstates/acacia_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/acacia_wall.json",
           "src/main/java/net/mcreator/test/block/AcaciaWallBlock.java",
           "src/main/resources/data/test/loot_tables/blocks/acacia_wall.json",
           "src/main/resources/assets/test/models/block/acacia_wall.json",
           "src/main/resources/assets/test/models/block/acacia_wall_post.json",
           "src/main/resources/assets/test/models/block/acacia_wall_inventory.json",
-          "src/main/resources/data/test/forge/biome_modifier/acacia_wall_biome_modifier.json",
           "src/main/resources/assets/test/models/block/acacia_wall_side_tall.json"
         ]
       },
@@ -586,11 +574,8 @@
       "registry_name": "crimson_wall",
       "metadata": {
         "files": [
-          "src/main/resources/data/test/forge/biome_modifier/crimson_wall_biome_modifier.json",
           "src/main/resources/assets/test/models/block/crimson_wall_inventory.json",
           "src/main/resources/assets/test/models/block/crimson_wall.json",
-          "src/main/resources/data/test/worldgen/configured_feature/crimson_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/crimson_wall.json",
           "src/main/resources/data/test/loot_tables/blocks/crimson_wall.json",
           "src/main/resources/assets/test/models/item/crimson_wall.json",
           "src/main/resources/assets/test/models/block/crimson_wall_side_tall.json",
@@ -613,13 +598,10 @@
           "src/main/resources/assets/test/models/block/warped_wall_side_tall.json",
           "src/main/resources/assets/test/models/block/warped_wall_inventory.json",
           "src/main/resources/assets/test/blockstates/warped_wall.json",
-          "src/main/resources/data/test/worldgen/placed_feature/warped_wall.json",
           "src/main/java/net/mcreator/test/block/WarpedWallBlock.java",
           "src/main/resources/assets/test/models/item/warped_wall.json",
           "src/main/resources/assets/test/models/block/warped_wall_post.json",
-          "src/main/resources/data/test/worldgen/configured_feature/warped_wall.json",
           "src/main/resources/assets/test/models/block/warped_wall.json",
-          "src/main/resources/data/test/forge/biome_modifier/warped_wall_biome_modifier.json",
           "src/main/resources/data/test/loot_tables/blocks/warped_wall.json"
         ]
       },
@@ -692,6 +674,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
           }
         ]
       },
@@ -809,20 +795,6 @@
       "path": "~/Slabs Overhaul/Grass"
     },
     {
-      "name": "GrassBlock",
-      "type": "loottable",
-      "sortid": 76,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grass_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/test/loot_tables/blocks/grass_block.json"
-        ]
-      },
-      "path": "~/Slabs Overhaul/Grass"
-    },
-    {
       "name": "JungleWallC",
       "type": "recipe",
       "sortid": 74,
@@ -882,15 +854,11 @@
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:slabs": [
-      "~CUSTOM:DirtSlab"
-    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:DarkOakWall",
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
       "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
       "~CUSTOM:SpruceWall",
       "~CUSTOM:JungleWall",
       "~CUSTOM:BirchWall",
@@ -900,19 +868,22 @@
       "~CUSTOM:OakSecretDoor",
       "~CUSTOM:OakAltSlab"
     ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:GrassSlab"
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:DirtSlab"
     ],
     "BLOCKS:minecraft:walls": [
       "~CUSTOM:DarkOakWall",
       "~CUSTOM:WarpedWall",
       "~CUSTOM:CrimsonWall",
       "~CUSTOM:AcaciaWall",
-      "~CUSTOM:DarkOakSpruce",
       "~CUSTOM:SpruceWall",
       "~CUSTOM:JungleWall",
       "~CUSTOM:BirchWall",
       "~CUSTOM:OakWall"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:GrassSlab",
+      "~CUSTOM:DirtSlab"
     ]
   },
   "language_map": {
@@ -938,10 +909,10 @@
       "block.test.acacia_wall": "Acacia Wall",
       "advancements.i_see_you.title": "I Can See You",
       "block.test.birch_wall": "Birch Wall",
-      "block.test.crimson_wall": "Acacia Wall",
+      "block.test.crimson_wall": "Crimson Wall",
       "block.test.dirt_slab": "Dirt Slab",
       "block.ultad.glass_trapdoor": "Test Glass Door",
-      "block.test.warped_wall": "Acacia Wall",
+      "block.test.warped_wall": "Warped Wall",
       "advancements.secret_avancement.descr": "The player opened a secret door",
       "advancements.i_see_you.descr": "The player place a glass door",
       "gui.test.gui_test_gel.Glacon": "Glacon",
